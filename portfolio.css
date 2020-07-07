@@ -1,0 +1,137 @@
+a {
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	margin: 1rem 0 0 1rem;
+}
+
+ul li {
+	list-style-type: square;
+	padding: 4px 8px;
+}
+
+@media only screen and (min-width: 769px) {
+	div.read_article {
+		display: inline-block;
+		margin-right: 3rem;
+	}
+
+	a.underline {
+		font: 800 1.2rem 'Nunito', sans-serif;
+		text-decoration: underline;
+		display: inline-block;
+	}
+
+	@media only screen and (max-width: 600px) {
+		a.underline {
+			margin-top: 2rem;
+		}
+	}
+
+	a.underline {
+		display: none;
+	}
+
+
+	@media only screen and (max-width: 400px) {
+		h1 {
+			font-size: 3rem;
+		}
+	}
+
+	article.grid {
+		display: grid;
+		grid-column-gap: 2rem;
+		grid-row-gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	article.grid2 {
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	}
+
+	article.grid3 {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	article.grid4 {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+
+	figure img {
+		object-fit: cover;
+		object-position: 0 0;
+		vertical-align: top;
+		border-radius: 4px;
+		box-shadow: 0 20px 40px #D3DFF3;
+		background-color: transparent;
+		outline: none;
+
+	}
+
+	.grid2 figure img {
+		width: 500px;
+		height: 500px;
+	}
+
+	.grid3 figure img {
+		width: 300px;
+		height: 300px;
+	}
+
+	.grid4 figure img {
+		width: 200px;
+		height: 200px;
+	}
+
+	figure img:focus,
+	figure a:focus {
+		outline: none;
+	}
+
+	figcaption {
+		margin-top: 1rem;
+		font: 600 1rem 'Nunito', sans-serif;
+	}
+
+	figure {
+		text-align: center;
+	}
+
+	.fancybox-custom .fancybox-button {
+		background: transparent;
+	}
+
+	.fancybox-custom img {
+		cursor: default;
+	}
+}
+
+article.prototypes a{
+	position: relative;
+	
+}
+a:hover img{
+	border: 4px solid #FFF;
+}
+
+article.prototypes a:before {
+	content: '';
+	position: absolute;
+	top: -24px;
+	right: -24px;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.9) url("images/figma-logo.svg") 50% 50% no-repeat;
+	background-size: 20px;
+	box-shadow: 0 4px 8px #D3DFF3;
+	transition: all 2s ease-in-out;
+
+}

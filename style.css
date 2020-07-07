@@ -1,0 +1,580 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 600 1rem 'Nunito', sans-serif;
+	background-color: #F7FAFF;
+}
+
+div#wrapper {
+	width: 90%;
+	margin: 3rem auto 10rem auto;
+	max-width: 1140px;
+	position: relative;
+}
+
+/*.marg_left {
+	margin-left: 4rem;
+}*/
+.margin-top {
+	margin-top: 2rem;
+}
+
+.head-flex {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+header a,
+section a {
+	text-decoration: none;
+	color: inherit;
+}
+
+header p {
+	font: 600 1rem 'Nunito', sans-serif;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+header img {
+	width: 1rem;
+	vertical-align: middle;
+	margin-right: 0.5rem;
+}
+
+
+nav {
+	font: 600 1rem 'Nunito', sans-serif;
+	width: 60%;
+	display: inline-block;
+}
+
+ul#nav_menu {
+	display: flex;
+	justify-content: flex-end;
+}
+
+button#menu,
+button#menu_close,
+ul#overlay {
+	display: none;
+}
+
+ul#nav_menu li:not(:last-child) {
+	margin-right: 0.3rem;
+}
+
+ul#nav_menu li,
+ul#overlay li {
+	list-style: none;
+}
+
+nav a,
+ul#overlay a,
+div.read_article a,
+#mail a {
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+	width: 100%;
+	padding: 0.5rem 1.5rem;
+	transition: background-color 0.5s;
+	-webkit-tap-highlight-color: transparent;
+}
+
+@media only screen and (max-width: 1024px) {
+	nav a {
+		padding: 0.5rem 0.5rem;
+	}
+}
+
+nav a:hover,
+div#mail:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #262626;
+	border-color: #262626;
+	border-radius: 2px;
+}
+
+div.read_article:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #262626;
+}
+
+main {
+	margin: 7rem 0 7rem 0;
+}
+
+@media only screen and (min-width: 769px) {
+
+	button#menu,
+	button#menu_close,
+	ul#overlay {
+		display: none !important;
+	}
+
+	div#head-flex {
+		display: flex !important;
+	}
+
+	div#hide {
+		display: block !important;
+	}
+}
+
+#fullHeight {
+	height: 100vh;
+}
+
+h1 {
+	font: 3.5rem 'Vidaloka', serif;
+	margin-bottom: 1rem;
+}
+
+div#align_right {
+	position: relative;
+	height: 10rem;
+	/*no margin-bottom due to position absolute for inner div*/
+}
+
+div#align_right h2,
+article h2 {
+	font: 3rem 'Vidaloka', serif;
+	margin-bottom: 1rem;
+}
+
+h3 {
+	font: 2rem 'Vidaloka', serif;
+	margin-top: 4rem;
+}
+
+div#align_right p,
+article p,
+div.overall p {
+	font: 1.125rem 'Nunito', sans-serif;
+	line-height: 1.5;
+	opacity: 0.7;
+}
+
+article#works {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 7rem;
+}
+
+article#works section {
+	width: 30%;
+	padding: 2rem;
+	border: solid 1px transparent;
+}
+
+article#works section:hover {
+	border: solid 1px black;
+	cursor: pointer;
+}
+
+article#works section a {
+	width: 100%;
+}
+
+article#works img {
+	width: 100%;
+	vertical-align: top;
+	margin-bottom: 3rem;
+}
+
+section img {
+	border-radius: 4px;
+	box-shadow: 0 20px 40px #D3DFF3;
+}
+
+.anim h3 {
+	margin-top: 0;
+}
+
+.line {
+	width: 8rem;
+	height: 0.4rem;
+	background-color: black;
+	margin: 1.5rem 0 2rem -1rem;
+}
+
+div.read_flex {
+	display: flex;
+	width: 100%;
+}
+
+div.read_flex:hover {
+	cursor: pointer;
+}
+
+
+div.read_flex img {
+	width: 35%;
+	align-self: flex-start;
+	margin-right: 10%;
+}
+
+div.read_text {
+	width: 55%;
+}
+
+div.overall {
+	display: flex;
+	margin-bottom: 3rem;
+}
+
+div.overall img {
+	width: 50%;
+	align-self: flex-start;
+	margin-top: -5%;
+}
+
+div.overall_text {
+	width: 45%;
+	margin-right: 5%;
+}
+
+div.read_article {
+	width: 40%;
+	min-width: 200px;
+	text-align: center;
+	border: solid black 3px;
+	border-radius: 2px;
+	margin-top: 1.5rem;
+	font: 800 1.2rem 'Nunito', sans-serif;
+	transition: background-color 0.5s;
+}
+
+article#read p {
+	margin-bottom: 2rem;
+}
+
+article#read section:not(:last-of-type) {
+	margin-bottom: 5rem;
+}
+
+
+footer h2 {
+	font: 3rem 'Vidaloka', serif;
+}
+
+footer h3 {
+	margin-top: 8rem;
+}
+
+footer p {
+	font: 1rem 'Nunito', sans-serif;
+	margin-top: 1rem;
+	line-height: 1.5;
+}
+
+footer p:nth-of-type(2) {
+	display: inline-block;
+	margin-right: 3rem;
+}
+
+/*footer {
+	width: 100%;
+}*/
+
+#mail {
+	font: 800 1.2rem 'Nunito', sans-serif;
+	display: inline-block;
+	width: 18%;
+	min-width: 200px;
+	text-align: center;
+	border: solid black 3px;
+	border-radius: 2px;
+	transition: background-color 0.5s;
+	/*hover*/
+	margin-top: 1rem;
+}
+
+.no-displ {
+	display: none;
+}
+
+
+
+#no-move {
+	/*width of outer-zone + a couple px*/
+	width: 17.5rem;
+	margin-right: 3rem;
+}
+
+.boundary {
+	/*width and height of green-line, background-clolor of body*/
+	/*NO MARGIN!!!!*/
+	width: 10rem;
+	background-color: #F7FAFF;
+}
+
+div#game {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+	/*needs height so the following text does not move*/
+	height: 5rem;
+}
+
+#green-line {
+	width: 10rem;
+	background-color: aqua;
+	height: 0.5rem;
+
+	border-radius: 6px;
+	cursor: grab;
+}
+
+#outer-zone {
+	width: 16rem;
+	border: none;
+	/*bckg color of body*/
+	background-color: #F7FAFF;
+}
+
+#inner-zone {
+	margin: 0.5rem 0.5rem 0.5rem 0rem;
+	height: 4rem;
+	border: dashed 1px #D3D3D3;
+	width: 15rem;
+	font: 800 1.2rem 'Nunito', sans-serif;
+	text-align: center;
+	line-height: 4rem;
+}
+
+.same-zones {
+	/*change bckg color in JS also*/
+	background-color: white;
+	/*change border in JS also*/
+	border-radius: 6px;
+	/*font of paragraph*/
+
+}
+
+
+
+
+
+
+
+
+
+
+ul#social {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+ul#social li {
+	list-style: none;
+	width: 3rem;
+	margin-right: 2rem;
+	margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+	div#wrapper {
+		width: 80%;
+	}
+
+	div#overf {
+		overflow-x: hidden;
+		/*for overlay*/
+		position: relative;
+		/*for desk*/
+		min-width: 320px;
+	}
+
+	.marg_left {
+		align-items: flex-start;
+		/*align nav to flex-start not center*/
+		margin: auto;
+	}
+
+	div#wrapper {
+		position: static;
+		/*button absolute right:0 for .overf*/
+	}
+
+	ul#nav_menu {
+		display: none;
+	}
+
+	button#menu {
+		display: initial;
+		position: absolute;
+		right: 0;
+		transform: translate(0, -30%);
+		/*z-index: 1;*/
+		background-color: black;
+		color: white;
+		font: 800 0.8em 'Nunito', sans-serif;
+		border: none;
+		padding: 1.5em 2em;
+	}
+
+	button#menu_close {
+		position: absolute;
+		right: 0;
+		transform: translate(0, -30%);
+		background-color: transparent;
+		z-index: 3;
+		border: none;
+		padding: 1.6em 4em;
+	}
+
+	button:hover {
+		cursor: pointer;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+	ul#overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		overflow-y: scroll;
+		/*the landscape view?*/
+		background-color: black;
+		width: 100%;
+		color: white;
+		padding-top: 2.5rem;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	ul#overlay li {
+		width: 30%;
+		white-space: nowrap;
+		font-size: 1.5em;
+		margin-bottom: 2rem;
+	}
+
+	ul#overlay a:hover {
+		color: black;
+		background-color: white;
+	}
+
+	div.overall_text {
+		width: 100%;
+
+	}
+
+	div.overall img {
+		display: none;
+	}
+
+	div#align_right p,
+	article p,
+	article p:nth-of-type(2),
+	div.overall p,
+	footer p,
+	blockquote p {
+		font-size: 1.3rem;
+	}
+
+	article#works {
+		flex-direction: column;
+	}
+
+	article#works section {
+		width: 100%;
+	}
+
+	article#works section:not(:last-of-type) {
+		margin-bottom: 3rem;
+	}
+
+	div.read_flex {
+		flex-direction: column;
+	}
+
+	div.read_flex img {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 3rem;
+	}
+
+	div.read_text {
+		width: 100%;
+	}
+
+	footer p:nth-of-type(2) {
+		margin-right: 0;
+	}
+
+	footer h3 {
+		margin-top: 2.5rem;
+	}
+
+	#literally,
+	div#game,
+	.no-displ {
+		display: none;
+	}
+
+	h2+h3 {
+		font-size: 3rem;
+	}
+
+	div#mail {
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	div#align_right div {
+		position: static;
+	}
+
+	div#align_right {
+		height: initial;
+		margin-bottom: 5rem;
+	}
+
+	div#align_right h2,
+	article h2,
+	h2+h3 {
+		font-size: 3rem;
+	}
+
+	div#mail,
+	div.read_article {
+		width: 100%;
+	}
+
+	ul#overlay li {
+		width: 35%;
+		font-size: 1.3em;
+	}
+
+}
+
+@media only screen and (max-width: 420px) {
+	ul#social li {
+		width: 20%;
+	}
+
+	ul#overlay li {
+		width: 45%;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	h1 {
+		font-size: 4.5rem;
+	}
+}

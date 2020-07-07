@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	<title>Animations - Igor Izhik - Product Designer & Illustrator</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="animations.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,800|Vidaloka" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+	<script src="DropLine.js"></script>
+</head>
+
+<body>
+	<div id="overf">
+		<div id="wrapper">
+			<div class="head-flex marg_left">
+				<header>
+					<a href="index.html"><img src="images/izhik-logo.svg" alt="izhik-logo">
+					<p>Igor Izhik</p></a>
+				</header>
+				<nav>
+					<ul id="nav_menu">
+						<li><a href="about.html">About</a></li>
+						<li class="no-displ"><a href="the_process.html">The&nbsp;process</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="animations.html">Animations</a></li>
+						<li><a href="illustrations.html">Illustrations</a></li>
+					</ul>
+					<button type="button" id="menu" onclick="showMenu()">MENU</button>
+					<button type="button" id="menu_close" onclick="closeMenu()"><img src="images/icn_close.svg" alt="close"></button>
+					<ul id="overlay">
+						<li><a href="about.html">About</a></li>
+						<li class="no-displ"><a href="the_process.html">The process</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="animations.html">Animations</a></li>
+						<li><a href="illustrations.html">Illustrations</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="hide">
+				<main>
+					
+					<div class="overall marg_left">
+								<div class="overall_text">
+									<h1>Animations</h1>
+						<p>Helping start-ups to visually explain what they do.</p>
+								</div>
+						<img src="images/illustration.svg" alt="desk">
+							</div>
+					
+					<article id="read" class="marg_left">
+						<section>
+							<h3>Crew</h3>
+							<div class="line"></div>
+							<div class="read_flex">
+								<img src="images/crew.jpg" onmouseover=this.src="https://cdn.dribbble.com/users/114484/screenshots/2723251/crew_special_ops_optimized.gif" onmouseout=this.src="images/crew.jpg" alt="Crew">
+								<div class="read_text">
+									<p>Crew is a marketplace of vetted freelance designers, developers, and studios for hire.</p>
+									<p><i>Hover over the image for animation to start playing.</i></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<h3>PostReach</h3>
+							<div class="line"></div>
+							<div class="read_flex">
+								<img src="images/postReach.jpg" onmouseover=this.src="https://cdn.dribbble.com/users/114484/screenshots/3118719/postreach_final.gif" onmouseout=this.src="images/postReach.jpg" alt="PostReach">
+								<div class="read_text">
+									<p>PostReach helps to understand where blogger’s traffic is coming from and who’s talking about their content online.</p>
+									<p><i>Hover over the image for animation to start playing.</i></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<h3>Level Frames</h3>
+							<div class="line"></div>
+							<div class="read_flex">
+								<img src="images/level_frames.jpg" onmouseover=this.src="https://cdn.dribbble.com/users/114484/screenshots/2798701/levelframes_800x600.gif" onmouseout=this.src="images/level_frames.jpg" alt="Level Frames">
+								<div class="read_text">
+									<p>Level allows anyone to find the right frame, at the right size, customized online and delivered to your door.</p>
+									<p><i>Hover over the image for animation to start playing.</i></p>
+								</div>
+							</div>
+						</section>
+					</article>
+				</main>
+				<footer class="marg_left">
+					<h2>Drop me a line</h2>
+					<p class="no-displ">Literally. Drag and drop the line on the box, and I will get notified.</p>
+					
+						<!--Drop me a line-->
+					<div id="game">
+						<div id="no-move">
+							<div id="outer-zone" class="same-zones">
+							<div id="inner-zone" class="same-zones"></div>
+							</div>
+						</div>
+						<div class="boundary">
+							<div id="green-line" class="drag-drop"></div>
+						</div>
+					</div>
+					
+					<h3 class="no-displ">Email me</h3>
+					<p>I am currently not accepting any new projects, but that doesn’t mean you have to keep yourself from saying hi or getting connected.</p>
+					<div id="mail">
+						<a href="mailto:igor.izhik@gmail.com" target="_top">Email me</a>
+					</div>
+					<h3>Stealth mode</h3>
+					<p>I am pretty active on social media, so please feel free to check out my daily activities there.</p>
+					<ul id="social">
+						<li><a href="http://linkedin.com/in/izhik"><img src="images/icn_linkedin.svg" alt="Linkedin"></a></li>
+						<li><a href="https://twitter.com/igorizhik"><img src="images/icn_twitter.svg" alt="Twitter"></a></li>
+						<li><a href="https://dribbble.com/izhik"><img src="images/icn_dribbble.svg" alt="Dribbble"></a></li>
+						<li><a href="http://instagram.com/igor.izhik"><img src="images/icn_instagram.svg" alt="Instagram"></a></li>
+						<li><a href="https://angel.co/izhik"><img src="images/icn_angellist.svg" alt="Angellist"></a></li>
+					</ul>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script>
+		function showMenu() {
+			document.getElementById("overlay").style.display = "flex";
+			document.getElementById("menu_close").style.display = "block";
+			document.getElementById("menu").style.display = "none";
+			document.getElementById("hide").style.display = "none";
+		}
+
+		function closeMenu() {
+			document.getElementById("overlay").style.display = "none";
+			document.getElementById("menu_close").style.display = "none";
+			document.getElementById("menu").style.display = "initial";
+			document.getElementById("hide").style.display = "initial";
+		}
+	</script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28473723-1"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+
+  gtag('config', 'UA-28473723-1');
+
+</script>
+</body>
+
+</html>

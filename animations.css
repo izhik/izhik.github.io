@@ -1,0 +1,8 @@
+﻿@media only screen and (min-width: 769px){
+nav a[href="animations.html"]{
+	background-color: #262626;
+	color: white;
+	border-color: #262626;
+	border-radius: 2px;
+}
+}

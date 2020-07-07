@@ -1,0 +1,19 @@
+@media only screen and (min-width: 769px){
+div.read_article{
+	display: inline-block;
+	margin-right: 3rem;
+}
+a.underline{
+	font: 800 1.2rem 'Nunito', sans-serif;
+	text-decoration: underline;
+	display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+	a.underline{
+		margin-top: 2rem;
+	}
+	}
+a.underline{
+	display: none;
+}

@@ -1,0 +1,41 @@
+@media only screen and (min-width: 769px) {
+	nav a[href="about.html"] {
+		background-color: #262626;
+		color: white;
+		border-color: #262626;
+		border-radius: 2px;
+	}
+}
+
+blockquote {
+	font: 1rem 'Nunito', sans-serif;
+	line-height: 1.5;
+}
+
+article.read {
+	width: 60%;
+}
+article.padd_top{
+	padding-top: 4rem;
+}
+blockquote p:nth-child(2) {
+	font-weight: 800;
+	 margin: 1rem 0 0 2rem;
+}
+
+blockquote:not(:last-of-type) {
+	margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+	article.read {
+		width: 80%;
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+	article.read {
+		width: 100%;
+		margin: auto;
+	}
+}

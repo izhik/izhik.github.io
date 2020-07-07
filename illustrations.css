@@ -1,0 +1,44 @@
+@media only screen and (min-width: 769px){
+nav a[href="illustrations.html"]{
+	background-color: #262626;
+	color: white;
+	border-color: #262626;
+	border-radius: 2px;
+}
+}
+	@media only screen and (max-width: 400px) {
+	h1{
+		font-size: 3rem;
+	}
+}
+article#illustr{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-column-gap: 5%;
+  grid-row-gap: 2rem;
+}
+
+figure img{
+	width: 100%;
+	vertical-align: top;
+	box-shadow: 0 20px 40px #D3DFF3;
+	background-color: transparent; !important
+	outline: none;
+}
+figure img:focus, figure a:focus{
+	outline: none;
+}
+
+figcaption{
+	margin-top: 1rem;
+	font: 600 1rem 'Nunito', sans-serif;
+}
+figure{
+	text-align: center;
+}
+.fancybox-custom .fancybox-button{
+    background: transparent;
+  }
+.fancybox-custom img{
+cursor: default;
+}
