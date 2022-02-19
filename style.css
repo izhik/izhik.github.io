@@ -92,7 +92,7 @@ header {
 	padding: 1rem 5%;
 }
 
-div.logo a{
+div.logo a {
 	text-decoration: none;
 	color: inherit;
 }
@@ -258,9 +258,11 @@ section img {
 .anim h3 {
 	margin-top: 0;
 }
-.anim a{
+
+.anim a {
 	text-decoration: none;
 }
+
 div.read-flex {
 	display: flex;
 	width: 100%;
