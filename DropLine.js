@@ -38,7 +38,7 @@ function dragMoveListener (event) {
 				if (event.target === outer||event.target === inner) {
 					inner.style.border = "none";
 					//border style of inner
-					outer.style.border = "dashed 1px #D3D3D3";
+					outer.style.border = "dashed 2px #D5DADF";
 					//background color of inner
 					outer.style.backgroundColor = "white";
 				};
@@ -53,7 +53,7 @@ function dragMoveListener (event) {
 				 //background color of body
 					outer.style.backgroundColor = "#F7FAFF";
 					//initial border of inner
-					inner.style.border = "dashed 1px #D3D3D3";
+					inner.style.border = "dashed 2px #D5DADF";
 				};
 			},
 				ondrop: function (event) {
@@ -61,7 +61,7 @@ function dragMoveListener (event) {
 					outer.style.border = "none";
 					//background color of body
 					outer.style.backgroundColor = "#F7FAFF";
-					inner.style.border = "dashed 1px #D3D3D3";
+					inner.style.border = "dashed 2px #D5DADF";
 					//initial border of inner
 					inner.textContent = 'Thank you!';
 					new Image().src = 'https://c28l8tflwb.execute-api.us-east-1.amazonaws.com/dev/igor';

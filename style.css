@@ -5,43 +5,105 @@
 }
 
 body {
-	font: 600 1rem 'Nunito', sans-serif;
+	font: 300 1rem 'Libre+Franklin', sans-serif;
 	background-color: #F7FAFF;
+	line-height: 1.6;
+	color: #000;
 }
 
-div#wrapper {
+#wrapper {
 	width: 90%;
 	margin: 3rem auto 10rem auto;
 	max-width: 1140px;
 	position: relative;
 }
 
-/*.marg_left {
-	margin-left: 4rem;
+/* fonts start */
+p {
+	margin-bottom: 1.25rem;
+	font: 1.125rem 'Libre+Franklin', sans-serif;
+	line-height: 1.5;
+	color: #33373E;
+}
+
+h1 {
+	font: 600 2rem 'Merriweather', serif;
+	line-height: 1.25;
+	margin-bottom: 2rem;
+}
+
+h2 {
+	font: 600 1.5rem 'Merriweather', serif;
+	line-height: 1.25;
+	margin-bottom: 2rem;
+
+}
+
+h3 {
+	font: 600 1.25rem 'Merriweather', serif;
+	position: relative;
+	margin-bottom: 1rem;
+
+
+}
+
+ul {
+	margin: 1rem 0 0 1rem;
+}
+
+ul li {
+	list-style-type: disc;
+	padding: 0.25rem 0.5rem;
+}
+
+/*
+h3::after {
+	content: "";
+	position: absolute;
+	width: 8rem;
+	height: 0.5rem;
+	left: -1rem;
+	bottom: -1rem;
+	background-color: yellowgreen;
+	z-index: -1;
 }*/
+/* fonts end */
+/* blocks start */
+section {
+	margin-top: 3rem;
+}
+
+/* blocks end */
 .margin-top {
 	margin-top: 2rem;
 }
 
-.head-flex {
+header {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background-color: #F7FAFF;
+	z-index: 1;
+
+	margin: 1rem auto;
+
+	padding: 1rem 5%;
 }
 
-header a,
-section a {
+div.logo a{
 	text-decoration: none;
 	color: inherit;
 }
 
-header p {
-	font: 600 1rem 'Nunito', sans-serif;
+div.logo span {
+	font: 400 1rem 'Merriweather', sans-serif;
 	vertical-align: middle;
 	display: inline-block;
 }
 
-header img {
+div.logo img {
 	width: 1rem;
 	vertical-align: middle;
 	margin-right: 0.5rem;
@@ -49,7 +111,7 @@ header img {
 
 
 nav {
-	font: 600 1rem 'Nunito', sans-serif;
+	font: 400 1.125rem 'Merriweather', sans-serif;
 	width: 60%;
 	display: inline-block;
 }
@@ -57,6 +119,7 @@ nav {
 ul#nav_menu {
 	display: flex;
 	justify-content: flex-end;
+	margin: 0;
 }
 
 button#menu,
@@ -84,6 +147,7 @@ div.read_article a,
 	display: inline-block;
 	width: 100%;
 	padding: 0.5rem 1.5rem;
+	border-radius: 0.25rem;
 	transition: background-color 0.5s;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -100,7 +164,7 @@ div#mail:hover {
 	color: white;
 	background-color: #262626;
 	border-color: #262626;
-	border-radius: 2px;
+	border-radius: 0.25rem;
 }
 
 div.read_article:hover {
@@ -111,6 +175,14 @@ div.read_article:hover {
 
 main {
 	margin: 7rem 0 7rem 0;
+}
+
+blockquote {
+	margin-bottom: 1rem;
+	font: 400 1.25rem;
+	line-height: 1.25;
+	padding-left: 2rem;
+	border-left: 0.25rem solid #D5DADF;
 }
 
 @media only screen and (min-width: 769px) {
@@ -134,10 +206,7 @@ main {
 	height: 100vh;
 }
 
-h1 {
-	font: 3.5rem 'Vidaloka', serif;
-	margin-bottom: 1rem;
-}
+
 
 div#align_right {
 	position: relative;
@@ -145,24 +214,13 @@ div#align_right {
 	/*no margin-bottom due to position absolute for inner div*/
 }
 
-div#align_right h2,
-article h2 {
-	font: 3rem 'Vidaloka', serif;
+div#align_right h2 {
+	font: 3rem 'Merriweather', serif;
 	margin-bottom: 1rem;
 }
 
-h3 {
-	font: 2rem 'Vidaloka', serif;
-	margin-top: 4rem;
-}
 
-div#align_right p,
-article p,
-div.overall p {
-	font: 1.125rem 'Nunito', sans-serif;
-	line-height: 1.5;
-	opacity: 0.7;
-}
+
 
 article#works {
 	display: flex;
@@ -173,11 +231,12 @@ article#works {
 article#works section {
 	width: 30%;
 	padding: 2rem;
-	border: solid 1px transparent;
+	border-radius: 0.5rem;
+	border: solid 2px transparent;
 }
 
 article#works section:hover {
-	border: solid 1px black;
+	border: solid 2px #687179;
 	cursor: pointer;
 }
 
@@ -199,47 +258,42 @@ section img {
 .anim h3 {
 	margin-top: 0;
 }
-
-.line {
-	width: 8rem;
-	height: 0.4rem;
-	background-color: black;
-	margin: 1.5rem 0 2rem -1rem;
+.anim a{
+	text-decoration: none;
 }
-
-div.read_flex {
+div.read-flex {
 	display: flex;
 	width: 100%;
 }
 
-div.read_flex:hover {
+div.read-flex:hover {
 	cursor: pointer;
 }
 
 
-div.read_flex img {
+div.read-flex img {
 	width: 35%;
 	align-self: flex-start;
-	margin-right: 10%;
+	margin-left: 10%;
 }
 
-div.read_text {
+div.read-text {
 	width: 55%;
 }
 
-div.overall {
+div.hero {
 	display: flex;
 	margin-bottom: 3rem;
 }
 
-div.overall img {
+div.hero img {
 	width: 300px;
 	border-radius: 50%;
 	align-self: flex-start;
 	margin-top: -64px;
 }
 
-div.overall_text {
+div.hero-text {
 	width: 75%;
 	margin-right: 5%;
 }
@@ -249,9 +303,9 @@ div.read_article {
 	min-width: 200px;
 	text-align: center;
 	border: solid black 3px;
-	border-radius: 2px;
+	border-radius: 0.375rem;
 	margin-top: 1.5rem;
-	font: 800 1.2rem 'Nunito', sans-serif;
+	font: 600 1.25rem 'Merriweather', sans-serif;
 	transition: background-color 0.5s;
 }
 
@@ -264,19 +318,7 @@ article#read section:not(:last-of-type) {
 }
 
 
-footer h2 {
-	font: 3rem 'Vidaloka', serif;
-}
 
-footer h3 {
-	margin-top: 8rem;
-}
-
-footer p {
-	font: 1rem 'Nunito', sans-serif;
-	margin-top: 1rem;
-	line-height: 1.5;
-}
 
 footer p:nth-of-type(2) {
 	display: inline-block;
@@ -288,7 +330,7 @@ footer p:nth-of-type(2) {
 }*/
 
 #mail {
-	font: 800 1.2rem 'Nunito', sans-serif;
+	font: 800 1.2rem 'Merriweather', sans-serif;
 	display: inline-block;
 	width: 18%;
 	min-width: 200px;
@@ -329,10 +371,9 @@ div#game {
 
 #green-line {
 	width: 10rem;
-	background-color: aqua;
-	height: 0.5rem;
-
-	border-radius: 6px;
+	background-color: yellowgreen;
+	height: 0.75rem;
+	border-radius: 0.5rem;
 	cursor: grab;
 }
 
@@ -346,9 +387,9 @@ div#game {
 #inner-zone {
 	margin: 0.5rem 0.5rem 0.5rem 0rem;
 	height: 4rem;
-	border: dashed 1px #D3D3D3;
+	border: dashed 2px #D5DADF;
 	width: 15rem;
-	font: 800 1.2rem 'Nunito', sans-serif;
+	font: 800 1.2rem 'Merriweather', sans-serif;
 	text-align: center;
 	line-height: 4rem;
 }
@@ -357,19 +398,10 @@ div#game {
 	/*change bckg color in JS also*/
 	background-color: white;
 	/*change border in JS also*/
-	border-radius: 6px;
+	border-radius: 0.5rem;
 	/*font of paragraph*/
 
 }
-
-
-
-
-
-
-
-
-
 
 ul#social {
 	display: flex;
@@ -379,10 +411,15 @@ ul#social {
 
 ul#social li {
 	list-style: none;
-	width: 3rem;
+	width: 4rem;
 	margin-right: 2rem;
 	margin-top: 2rem;
 }
+
+ul#social img {
+	box-shadow: none;
+}
+
 
 @media only screen and (max-width: 768px) {
 	div#wrapper {
@@ -397,7 +434,7 @@ ul#social li {
 		min-width: 320px;
 	}
 
-	.marg_left {
+	.marg-left {
 		align-items: flex-start;
 		/*align nav to flex-start not center*/
 		margin: auto;
@@ -420,7 +457,7 @@ ul#social li {
 		/*z-index: 1;*/
 		background-color: black;
 		color: white;
-		font: 800 0.8em 'Nunito', sans-serif;
+		font: 800 0.8em 'Merriweather', sans-serif;
 		border: none;
 		padding: 1.5em 2em;
 	}
@@ -432,7 +469,7 @@ ul#social li {
 		background-color: transparent;
 		z-index: 3;
 		border: none;
-		padding: 1.6em 4em;
+		padding: 2em;
 	}
 
 	button:hover {
@@ -456,6 +493,7 @@ ul#social li {
 		padding-top: 2.5rem;
 		flex-direction: column;
 		align-items: center;
+		margin: 0;
 	}
 
 	ul#overlay li {
@@ -463,6 +501,7 @@ ul#social li {
 		white-space: nowrap;
 		font-size: 1.5em;
 		margin-bottom: 2rem;
+		text-align: center;
 	}
 
 	ul#overlay a:hover {
@@ -480,14 +519,6 @@ ul#social li {
 		display: none;
 	}
 
-	div#align_right p,
-	article p,
-	article p:nth-of-type(2),
-	div.overall p,
-	footer p,
-	blockquote p {
-		font-size: 1.3rem;
-	}
 
 	article#works {
 		flex-direction: column;
@@ -501,17 +532,17 @@ ul#social li {
 		margin-bottom: 3rem;
 	}
 
-	div.read_flex {
+	div.read-flex {
 		flex-direction: column;
 	}
 
-	div.read_flex img {
+	div.read-flex img {
 		width: 100%;
 		margin-right: 0;
 		margin-bottom: 3rem;
 	}
 
-	div.read_text {
+	div.read-text {
 		width: 100%;
 	}
 
@@ -529,10 +560,6 @@ ul#social li {
 		display: none;
 	}
 
-	h2+h3 {
-		font-size: 3rem;
-	}
-
 	div#mail {
 		width: 40%;
 	}
@@ -548,11 +575,6 @@ ul#social li {
 		margin-bottom: 5rem;
 	}
 
-	div#align_right h2,
-	article h2,
-	h2+h3 {
-		font-size: 3rem;
-	}
 
 	div#mail,
 	div.read_article {
@@ -560,8 +582,8 @@ ul#social li {
 	}
 
 	ul#overlay li {
-		width: 35%;
-		font-size: 1.3em;
+		width: 50%;
+		font-size: 1.25em;
 	}
 
 }
@@ -572,12 +594,174 @@ ul#social li {
 	}
 
 	ul#overlay li {
-		width: 45%;
+		width: 50%;
 	}
 }
 
 @media only screen and (min-width: 1440px) {
 	h1 {
-		font-size: 4.5rem;
+		font-size: 2.5rem;
 	}
+}
+
+/*portfolio*/
+a {
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+
+@media only screen and (min-width: 769px) {
+	div.read_article {
+		display: inline-block;
+		margin-right: 3rem;
+	}
+
+	a.underline {
+		font: 800 1.2rem 'Nunito', sans-serif;
+		text-decoration: underline;
+		display: inline-block;
+	}
+
+	@media only screen and (max-width: 600px) {
+		a.underline {
+			margin-top: 2rem;
+		}
+	}
+
+	a.underline {
+		display: none;
+	}
+
+
+	@media only screen and (max-width: 400px) {
+		h1 {
+			font-size: 3rem;
+		}
+	}
+
+	article.grid {
+		display: grid;
+		grid-column-gap: 2rem;
+		grid-row-gap: 2rem;
+		margin-top: 2rem;
+		margin-bottom: 8rem;
+	}
+
+	article.grid2 {
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	}
+
+	article.grid3 {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	article.grid4 {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+
+	figure img {
+		object-fit: cover;
+		object-position: 0 0;
+		vertical-align: top;
+		border-radius: 0.5rem;
+		box-shadow: 0 20px 40px #D3DFF3;
+		background-color: transparent;
+		outline: none;
+		transition: all 0.2s ease-in-out;
+
+	}
+
+	.grid a:hover img {
+		outline: 4px solid #7ca1df;
+	}
+
+	figure img:focus,
+	figure a:focus {
+		outline: none;
+	}
+
+	figcaption {
+		margin-top: 1rem;
+		font: 600 1rem 'Nunito', sans-serif;
+	}
+
+	figure {
+		text-align: center;
+	}
+
+	.fancybox-custom .fancybox-button {
+		background: transparent;
+	}
+
+	.fancybox-custom img {
+		cursor: default;
+	}
+}
+
+article.prototypes a {
+	position: relative;
+
+}
+
+
+article.prototypes a:before {
+	content: '';
+	position: absolute;
+	top: -24px;
+	right: -24px;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.9) url("images/figma-logo.svg") 50% 50% no-repeat;
+	background-size: 20px;
+	box-shadow: 0 4px 8px #D3DFF3;
+	transition: all 2s ease-in-out;
+
+}
+
+.grid2 img {
+	width: 500px;
+	height: 500px;
+}
+
+.grid3 img {
+	width: 300px;
+	height: 300px;
+}
+
+.grid4 img {
+	width: 200px;
+	height: 200px;
+
+}
+
+img.icon {
+	width: 1rem;
+	height: 1rem;
+}
+
+.featured {
+	display: flex;
+	border-radius: 0.5rem;
+	margin: 0 -2rem;
+	padding: 2rem;
+	background: #E4E9F0;
+}
+
+.pdf:before {
+	content: "PDF";
+	position: relative;
+	font-size: 0.75rem;
+	background: #D2324F;
+	border-radius: 0.25rem;
+	padding: 0.125rem 0.25rem;
+	text-decoration: none;
+	color: white;
+	top: -2px;
 }

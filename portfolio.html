@@ -7,8 +7,7 @@
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
         <title>Portfolio - Igor Izhik</title>
         <link href="style.css" rel="stylesheet">
-        <link href="portfolio.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,800|Vidaloka" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,800|Fjalla+One" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
         <link
@@ -23,6 +22,8 @@
             sizes="16x16"
             href="/favicon/favicon-16x16.png"
         >
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
         <link rel="manifest" href="/favicon/site.webmanifest">
         <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
         <link rel="shortcut icon" href="/favicon/favicon.ico">
@@ -39,246 +40,274 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
         <script src="DropLine.js"></script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5S9D5LZ');</script>
-    <!-- End Google Tag Manager -->
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    })(window,document,'script','dataLayer','GTM-5S9D5LZ');
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5S9D5LZ');</script>
-    <!-- End Google Tag Manager -->
-</head>
+    })(window,document,'script','dataLayer','GTM-5S9D5LZ');
+        </script>
+        <!-- End Google Tag Manager -->
+    </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S9D5LZ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-5S9D5LZ"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"
+            ></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <div id="overf">
-            <div id="wrapper">
-                <div class="head-flex">
-                    <header>
-                        <a href="index.html">
-                            <img src="images/izhik-logo.svg" alt="izhik-logo">
-                            <p>Igor Izhik</p>
-                        </a>
-                    </header>
-                    <nav>
-                        <ul id="nav_menu">
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="products.html">Products</a>
-                            </li>
-                            <li>
-                                <a href="animations.html">Animations</a>
-                            </li>
-                            <li>
-                                <a href="illustrations.html">Illustrations</a>
-                            </li>
-                        </ul>
-                        <button type="button" id="menu" onclick="showMenu()">MENU</button>
-                        <button type="button" id="menu_close" onclick="closeMenu()">
-                            <img src="images/icn_close.svg" alt="close">
-                        </button>
-                        <ul id="overlay">
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
-                            <li class="no-displ">
-                                <a href="the_process.html">The process</a>
-                            </li>
-                            <li>
-                                <a href="products.html">Products</a>
-                            </li>
-                            <li>
-                                <a href="animations.html">Animations</a>
-                            </li>
-                            <li>
-                                <a href="illustrations.html">Illustrations</a>
-                            </li>
-                        </ul>
-                    </nav>
+            <header class="head-flex marg-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/izhik-logo.svg" alt="izhik-logo">
+                        <span>Igor Izhik</span>
+                    </a>
                 </div>
+                <nav>
+                    <ul id="nav_menu">
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="animations.html">Animations</a>
+                        </li>
+                        <li>
+                            <a href="illustrations.html">Illustrations</a>
+                        </li>
+                    </ul>
+                    <button type="button" id="menu" onclick="showMenu()">MENU</button>
+                    <button type="button" id="menu_close" onclick="closeMenu()">
+                        <img src="images/icn_close.svg" alt="close">
+                    </button>
+                    <ul id="overlay">
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="animations.html">Animations</a>
+                        </li>
+                        <li>
+                            <a href="illustrations.html">Illustrations</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="wrapper">
                 <div id="hide">
                     <main>
                         <div class="overall marg_left">
                             <div class="overall_text">
                                 <h1>Portfolio</h1>
-                                <p>Disclaimer: updating portfolio takes too much time, I'd rather be playing ping-pong or fishing or reading or doing anything but. I'd gladly show and tell instead.</p>
+                                <p class="pdf">
+                                    <a href="/igor_izhik_resume.pdf" target="_blank" >Download my résumé</a>
+                                </p>
                             </div>
                         </div>
-                        <h3>Recent work at Litmus</h3>
-                        <div class="line"></div>
-                        <p>Real stuff: clickable Figma prototypes of the features I've been working on recently.</p>
-                        <article class="grid grid4 prototypes">
-                            <figure>
-                                <a href="https://www.figma.com/proto/U4X5LgRxovtyWkYaTmDqQc/Multi-step-approval-workflow?node-id=10375%3A3077&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=10375%3A3077&show-proto-sidebar=1" target="_blank">
-                                    <img src="images/proto-automated.png">
-                                </a>
-                                <figcaption>Multi-step approval workflow</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="https://www.figma.com/proto/Ee26ZatPxiVv0XpF0agueO/Passwordless-proofing?node-id=10860%3A4375&scaling=min-zoom&page-id=168%3A2200&starting-point-node-id=10860%3A4375&show-proto-sidebar=1" target="_blank">
-                                    <img src="images/proto-passwordless.png">
-                                </a>
-                                <figcaption>Passwordless proofing</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="https://www.figma.com/proto/YFCfcjsHV4IOvprHbMcVia/Organizing-modules?node-id=5545%3A4321&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=5545%3A4321&show-proto-sidebar=1" target="_blank">
-                                    <img src="images/proto-categories.png">
-                                </a>
-                                <figcaption>Organizing modules</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="https://www.figma.com/proto/vQSHc1cXmTa7KlnCWVlte8/Modules-in-Visual-Editor?scaling=min-zoom&page-id=0%3A1&starting-point-node-id=8528%3A4998&node-id=8528%3A4998&show-proto-sidebar=1" target="_blank">
-                                    <img src="images/proto-dnd.png">
-                                </a>
-                                <figcaption>Modules in Visual Editor</figcaption>
-                            </figure>
-                        </article>
-                        <h3>New Litmus Platform</h3>
-                        <div class="line"></div>
-                        <p>
-                            A daring redesign of the email testing platform, merging separate tools into one experience. Led user
+
+                        <section>                                
+                            <div class="read-flex featured">
+                                <div class="read-text">
+                                    <h3>Featured project: Modular Building in Litmus</h3>
+                                    <p>My recent project</p>
+                                    <div class="read_article">
+                                        <a href="modular-building.html">Case study</a>
+                                    </div>
+                                </div>
+                                <img src="images/modular-building/visual-editor-drag-and-drop.png" alt="Modular building">
+                            </div>
+                        </section>
+                    </article>
+                    <section>
+                    <h3>Recent work at Litmus (prototypes)</h3>
+                    <p>Real stuff: clickable Figma prototypes of the features I've been working on recently.</p>
+                    <article class="grid grid4 prototypes">
+                        <figure>
+                            <a href="https://www.figma.com/proto/U4X5LgRxovtyWkYaTmDqQc/Multi-step-approval-workflow?node-id=10375%3A3077&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=10375%3A3077&show-proto-sidebar=1" target="_blank">
+                                <img src="images/proto-automated.png">
+                            </a>
+                            <figcaption>Multi-step approval workflow</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="https://www.figma.com/proto/Ee26ZatPxiVv0XpF0agueO/Passwordless-proofing?node-id=10860%3A4375&scaling=min-zoom&page-id=168%3A2200&starting-point-node-id=10860%3A4375&show-proto-sidebar=1" target="_blank">
+                                <img src="images/proto-passwordless.png">
+                            </a>
+                            <figcaption>Passwordless proofing</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="https://www.figma.com/proto/YFCfcjsHV4IOvprHbMcVia/Organizing-modules?node-id=5545%3A4321&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=5545%3A4321&show-proto-sidebar=1" target="_blank">
+                                <img src="images/proto-categories.png">
+                            </a>
+                            <figcaption>Organizing modules</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="https://www.figma.com/proto/vQSHc1cXmTa7KlnCWVlte8/Modules-in-Visual-Editor?scaling=min-zoom&page-id=0%3A1&starting-point-node-id=8528%3A4998&node-id=8528%3A4998&show-proto-sidebar=1" target="_blank">
+                                <img src="images/proto-dnd.png">
+                            </a>
+                            <figcaption>Modules in Visual Editor</figcaption>
+                        </figure>
+                    </article>
+                    </section>
+                    <section>
+                    <h3>New Litmus Platform</h3>
+                    <p>
+                        A daring redesign of the email testing platform, merging separate tools into one experience. Led user
                         research, design, and coding. "Daring" is too bold a word, the redesign was driven by
                         user
                         research, focus groups at the Litmus Live conference in three locations, and tons of
                         interviews. Though the change is big, and necessary. Exciting times. Oh, here is a blog post where Whitney covers the changes better than I would.
-                            <a href="https://www.litmus.com/blog/introducing-the-new-redesigned-litmus/" target="_blank">https://www.litmus.com/blog/introducing-the-new-redesigned-litmus/</a>
-                        </p>
-                        <article class="grid grid3">
-                            <figure>
-                                <a href="images/dashboard.png" data-fancybox>
-                                    <img src="images/dashboard.png">
-                                </a>
-                                <figcaption>Dashboard</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="images/summary-email.png" data-fancybox>
-                                    <img src="images/summary-email.png">
-                                </a>
-                                <figcaption>Email Summary</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="images/dashboard-full.png" data-fancybox>
-                                    <img src="images/dashboard-full.png">
-                                </a>
-                                <figcaption>Inbox</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="images/builder-email.png" data-fancybox>
-                                    <img src="images/builder-email.png">
-                                </a>
-                                <figcaption>Email Builder</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="images/inbox-folders.png" data-fancybox>
-                                    <img src="images/inbox-folders.png">
-                                </a>
-                                <figcaption>Email Inbox</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="images/proof-email.png" data-fancybox>
-                                    <img src="images/proof-email.png">
-                                </a>
-                                <figcaption>Proofing tool</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="images/checklist-email.png" data-fancybox>
-                                    <img src="images/checklist-email.png">
-                                </a>
-                                <figcaption>Checklist</figcaption>
-                            </figure>
-                        </article>
-                        <h3>Litmus Design System: Illustrations</h3>
-                        <div class="line"></div>
-                        <p>A set of illustrations used in "Illustration" component in Litmus Design System</p>
-                        <article class="grid grid2">
-                            <figure>
-                                <a href="images/LDS-illustrations.png" data-fancybox>
-                                    <img src="images/LDS-illustrations.png">
-                                </a>
-                            </figure>
-                        </article>
-                        <h3>Litmus Homepage redesign</h3>
-                        <div class="line"></div>
-                        <p>
-                            Carefully crafted and tested home page. My work included research, illustrations, icons, micro-copy, design, usability testing and coding.
-                        </p>
-                        <article class="grid grid3">
-                            <figure>
-                                <a href="images/desktop.png" data-fancybox>
-                                    <img src="images/desktop-thmb.png">
-                                </a>
-                                <figcaption>Desktop</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="images/megamenu.png" data-fancybox>
-                                    <img src="images/megamenu-thmb.png">
-                                </a>
-                                <figcaption>Megamenu</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="images/mobile.png" data-fancybox>
-                                    <img src="images/mobile-thmb.png">
-                                </a>
-                                <figcaption>Mobile</figcaption>
-                            </figure>
-                        </article>
-                        <h3>
-                            New Litmus Platform promotion page
-                            <a href="https://litmus.com/new-redesigned-litmus" target="_blank">- Visit -</a>
-                        </h3>
-                        <div class="line"></div>
-                        <p>
-                            The page morphed a few times from "Exclusive Beta" to "New Litmus Platform". My work
+                        <a href="https://www.litmus.com/blog/introducing-the-new-redesigned-litmus/" target="_blank">https://www.litmus.com/blog/introducing-the-new-redesigned-litmus/</a>
+                    </p>
+                    <article class="grid grid3">
+                        <figure>
+                            <a href="images/dashboard.png" data-fancybox>
+                                <img src="images/dashboard.png">
+                            </a>
+                            <figcaption>Dashboard</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/summary-email.png" data-fancybox>
+                                <img src="images/summary-email.png">
+                            </a>
+                            <figcaption>Email Summary</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/dashboard-full.png" data-fancybox>
+                                <img src="images/dashboard-full.png">
+                            </a>
+                            <figcaption>Inbox</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/builder-email.png" data-fancybox>
+                                <img src="images/builder-email.png">
+                            </a>
+                            <figcaption>Email Builder</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/inbox-folders.png" data-fancybox>
+                                <img src="images/inbox-folders.png">
+                            </a>
+                            <figcaption>Email Inbox</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/proof-email.png" data-fancybox>
+                                <img src="images/proof-email.png">
+                            </a>
+                            <figcaption>Proofing tool</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/checklist-email.png" data-fancybox>
+                                <img src="images/checklist-email.png">
+                            </a>
+                            <figcaption>Checklist</figcaption>
+                        </figure>
+                    </article>
+                </section>
+            <section>
+                    <h3>Litmus Design System: Illustrations</h3>
+                    <p>A set of illustrations used in "Illustration" component in Litmus Design System</p>
+                    <article class="grid grid2">
+                        <figure>
+                            <a href="images/LDS-illustrations.png" data-fancybox>
+                                <img src="images/LDS-illustrations.png">
+                            </a>
+                        </figure>
+                    </article>
+                    <h3>
+                        Litmus Homepage redesign
+                        <a href="https://web.archive.org/web/20190331181254/https://litmus.com/" target="_blank">- Visit -</a>
+                    </h3>
+                    <p>
+                        Carefully crafted and tested home page. My work included research, illustrations, icons, micro-copy, design, usability testing and coding.
+                    </p>
+                    <article class="grid grid3">
+                        <figure>
+                            <a href="images/desktop.png" data-fancybox>
+                                <img src="images/desktop-thmb.png">
+                            </a>
+                            <figcaption>Desktop</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/megamenu.png" data-fancybox>
+                                <img src="images/megamenu-thmb.png">
+                            </a>
+                            <figcaption>Megamenu</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/mobile.png" data-fancybox>
+                                <img src="images/mobile-thmb.png">
+                            </a>
+                            <figcaption>Mobile</figcaption>
+                        </figure>
+                    </article>
+                </section>
+            <section>
+                    <h3>
+                        New Litmus Platform promotion page
+                        <a href="https://litmus.com/new-redesigned-litmus" target="_blank">- Visit -</a>
+                    </h3>
+                    <p>
+                        The page morphed a few times from "Exclusive Beta" to "New Litmus Platform". My work
                                 included
                                 the usual: micro-copy, illustration, design and coding.
-                        </p>
-                        <article class="grid grid2">
-                            <figure>
-                                <a href="images/new-platform.png" data-fancybox>
-                                    <img src="images/new-platform.png">
-                                </a>
-                                <figcaption>Desktop</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="images/new-platform-mobile.png" data-fancybox>
-                                    <img src="images/new-platform-mobile.png">
-                                </a>
-                                <figcaption>Mobile</figcaption>
-                            </figure>
-                        </article>
-                        <h3>Litmus Press Page</h3>
-                        <div class="line"></div>
-                        <p>
-                            Press page accumulates all the latest news, updates, and resources from Litmus. My work
+                    </p>
+                    <article class="grid grid2">
+                        <figure>
+                            <a href="images/new-platform.png" data-fancybox>
+                                <img src="images/new-platform.png">
+                            </a>
+                            <figcaption>Desktop</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/new-platform-mobile.png" data-fancybox>
+                                <img src="images/new-platform-mobile.png">
+                            </a>
+                            <figcaption>Mobile</figcaption>
+                        </figure>
+                    </article>
+                </section>
+            <section>
+                    <h3>Litmus Press Page</h3>
+                    <p>
+                        Press page accumulates all the latest news, updates, and resources from Litmus. My work
                                 included
                                 micro-copy, illustration, design and coding.
-                        </p>
-                        <article class="grid grid2">
-                            <figure>
-                                <a href="images/press-page.png" data-fancybox>
-                                    <img src="images/press-page.png">
-                                </a>
-                                <figcaption>Desktop</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="images/press-page-mobile.png" data-fancybox>
-                                    <img src="images/press-page-mobile.png">
-                                </a>
-                                <figcaption>Mobile</figcaption>
-                            </figure>
-                        </article>
-                        <!--                        <h3>Videos</h3>
-                        <div class="line"></div>
+                    </p>
+                    <article class="grid grid2">
+                        <figure>
+                            <a href="images/press-page.png" data-fancybox>
+                                <img src="images/press-page.png">
+                            </a>
+                            <figcaption>Desktop</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/press-page-mobile.png" data-fancybox>
+                                <img src="images/press-page-mobile.png">
+                            </a>
+                            <figcaption>Mobile</figcaption>
+                        </figure>
+                    </article>
+                </section>
+                    <!--                        <h3>Videos</h3>
+                         
                         <p>
                             I thought it'd be cool if I showed how I present my work to the team. Luckily, Zoom
                                 got me covered. Reach out to get the password.
@@ -310,14 +339,14 @@
                             </figure>
                         </article>
                         -->
-                    </main>
-                    <footer>
-                        <h3>Let's talk!</h3>
-                    </footer>
-                </div>
-            </body>
-        </html>
-    </div>
+                </main>
+                <footer>
+                    <h3>Let's talk!</h3>
+                </footer>
+            </div>
+        </body>
+    </html>
+</div>
 </div>
 <script>function showMenu() {
         document.getElementById("overlay").style.display = "flex";

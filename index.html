@@ -1,200 +1,232 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-	<title>Igor Izhik - Product Designer & Illustrator</title>
-	<link href="style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,800|Vidaloka" rel="stylesheet">
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-config" content="/favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>-->
-  <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
-	<script src="DropLine.js"></script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <title>Igor Izhik - Product Designer</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,600|Libre+Franklin:600|Supermercado+One" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon/favicon-16x16.png"
+        >
+        <link rel="manifest" href="/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>-->
+        <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+        <script src="DropLine.js"></script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-5S9D5LZ');</script>
-	<!-- End Google Tag Manager -->
-</head>
-<body>
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S9D5LZ"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	<div id="overf">
-		<div id="wrapper">
-			<!--<img src="images/illustration.svg" alt="desk">-->
-			<div class="head-flex marg_left">
-				<header>
-					<a href="index.html"><img src="images/izhik-logo.svg" alt="izhik-logo">
-					<p>Igor Izhik</p></a>
-				</header>
-				<nav>
-					<ul id="nav_menu">
-						<li><a href="about.html">About</a></li>
-						<li class="no-displ"><a href="the_process.html">The&nbsp;process</a></li>
-						<li><a href="products.html">Products</a></li>
-						<li><a href="animations.html">Animations</a></li>
-						<li><a href="illustrations.html">Illustrations</a></li>
-					</ul>
-					<button type="button" id="menu" onclick="showMenu()">MENU</button>
-					<button type="button" id="menu_close" onclick="closeMenu()"><img src="images/icn_close.svg" alt="close"></button>
-					<ul id="overlay">
-						<li><a href="about.html">About</a></li>
-						<li class="no-displ"><a href="the_process.html">The process</a></li>
-						<li><a href="products.html">Products</a></li>
-						<li><a href="animations.html">Animations</a></li>
-						<li><a href="illustrations.html">Illustrations</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div id="hide">
-				<main>				
-					<div class="overall marg_left">
-								<div class="overall_text">
-									<h1>I can help you with design</h1>
-								</div>
-						<img src="images/igor-izhik-product-designer.png" alt="desk">
-							</div>
-					
-					
-					<div id="align_right">
-						<div>
-							<h2>Look what I’ve done</h2>
-							<p>Take a look at some of the products I’ve built</p>
-						</div>
-					</div>
-					
-					<article id="works">
-						<section class="anim"  id="checkX1section">
-							<a href="products.html">
-								<h3 class="header1">Products</h3>
-								<div class="line line1"></div>
-								<img class="img1p" src="images/Products.png" alt="Products">
-								<p class="img1p">I love building products which help solving problems.</p>
-							</a>
-						</section>
-						<section class="anim"  id="checkX2section">
-							<a href="animations.html">
-								<h3 class="header2">Animations</h3>
-								<div class="line line2"></div>
-								<img class="img2p" src="images/Animations.png" alt="Animations">
-								<p class="img2p">Helping startups to explain what they do, visually.</p>
-							</a>
-						</section>
-						<section class="anim" id="checkX3section">
-							<a href="illustrations.html">
-								<h3 class="header3">Illustrations</h3>
-								<div class="line line3"></div>
-								<img class="img3p" src="images/Illustrations.png" alt="Illustrations">
-								<p class="img3p">Product illustrations, icons and other digital drawings.</p>
-							</a>
-						</section>
-					</article>
+	})(window,document,'script','dataLayer','GTM-5S9D5LZ');
+        </script>
+        <!-- End Google Tag Manager -->
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-5S9D5LZ"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"
+            ></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div id="overf">
+            <header class="head-flex marg-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/izhik-logo.svg" alt="izhik-logo">
+                        <span>Igor Izhik</span>
+                    </a>
+                </div>
+                <nav>
+                    <ul id="nav_menu">
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="animations.html">Animations</a>
+                        </li>
+                        <li>
+                            <a href="illustrations.html">Illustrations</a>
+                        </li>
+                    </ul>
+                    <button type="button" id="menu" onclick="showMenu()">MENU</button>
+                    <button type="button" id="menu_close" onclick="closeMenu()">
+                        <img src="images/icn_close.svg" alt="close">
+                    </button>
+                    <ul id="overlay">
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="animations.html">Animations</a>
+                        </li>
+                        <li>
+                            <a href="illustrations.html">Illustrations</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="wrapper">
+                <!--<img src="images/illustration.svg" alt="desk">-->
+                <div id="hide">
+                    <main>
+                        <div class="hero marg_left">
+                            <div class="hero-text">
+                                <h1>I’m a full-stack product designer working remotely from Grodno, Belarus.</h1>
+                            </div>
+                            <img src="images/igor-izhik-product-designer.png" alt="desk">
+                        </div>
+                        <article id="works">
+                            <section class="anim" id="checkX1section">
+                                <a href="products.html">
+                                    <h3 class="header1">Products</h3>
+                                    <div class="line line1"></div>
+                                    <img class="img1p" src="images/Products.png" alt="Products">
+                                    <p class="img1p">I love building products which help solving problems.</p>
+                                </a>
+                            </section>
+                            <section class="anim" id="checkX2section">
+                                <a href="animations.html">
+                                    <h3 class="header2">Animations</h3>
+                                    <div class="line line2"></div>
+                                    <img class="img2p" src="images/Animations.png" alt="Animations">
+                                    <p class="img2p">Helping startups to explain what they do, visually.</p>
+                                </a>
+                            </section>
+                            <section class="anim" id="checkX3section">
+                                <a href="illustrations.html">
+                                    <h3 class="header3">Illustrations</h3>
+                                    <div class="line line3"></div>
+                                    <img class="img3p" src="images/Illustrations.png" alt="Illustrations">
+                                    <p class="img3p">Product illustrations, icons and other digital drawings.</p>
+                                </a>
+                            </section>
+                        </article>
+                        <article id="read" class="marg_left">
+                            <h2>Give it a read</h2>
+                            <p>
+                                As much as I like design and art, I think communicating ideas and reflecting on one’s experiences in a written or verbal form is something that sets a good designer apart. Here is a couple of articles I wrote.
+                            </p>
+                            <section>
+                                
+                                <div class="read-flex">
 
-					<article id="read" class="marg_left">
-						<h2>Give it a read</h2>
-						<p>As much as I like design and art, I think communicating ideas and reflecting on one’s experiences in a written or verbal form is something that sets a good designer apart. Here is a couple of articles I wrote.
-						</p>
-						<section>
-							<h3>Remote control: looking back at my first year working remotely</h3>
-							<div class="line"></div>
-							<div class="read_flex">
-								<img src="images/working-remotely.png" alt="Working remotely">
-								<div class="read_text">
-									<p>Published on UX Planet</p>
-									<p>Even though I had experienced some resemblance of working remotely like freelancing, building a product with my buddy, and working from home one or two days a week, I had never embarked on a 100% remote journey. Until last year, when I joined Litmus (a remote-friendly company with offices in Boston, San Mateo and London, and the rest of the team distributed around the globe) as a Product Designer working right outside out of Toronto …</p>
-									<div class="read_article">
-										<a href="https://uxplanet.org/remote-control-looking-back-at-my-first-year-of-working-remotely-56c5492d8872" target="_blank">Read full article</a>
-									</div>
-								</div>
-							</div>
-						</section>
+                                    <div class="read-text">
+										<h3>Remote control: looking back at my first year working remotely</h3>
+                                        <p>Published on UX Planet</p>
+                                        <p>Even though I had experienced some resemblance of working remotely like freelancing, building a product with my buddy, and working from home one or two days a week, I had never embarked on a 100% remote journey. Until last year, when I joined Litmus (a remote-friendly company with offices in Boston, San Mateo and London, and the rest of the team distributed around the globe) as a Product Designer working right outside out of Toronto …</p>
+                                        <div class="read_article">
+                                            <a href="https://uxplanet.org/remote-control-looking-back-at-my-first-year-of-working-remotely-56c5492d8872" target="_blank">Read full article</a>
+                                        </div>
+                                    </div>
+									<img src="images/working-remotely.png" alt="Working remotely">
+                                </div>
+                            </section>
+                            <section>
+                                
+                                <div class="read-flex">
 
-						<section>
-							<h3>How to create a dramatic vector illustration</h3>
-							<div class="line"></div>
-							<div class="read_flex">
-								<img src="images/understand-humans-better.png" alt="Understand humans better">
-								<div class="read_text">
-									<p>Published on Smashing Magazine</p>
-									<p>I have been drawing desktop wallpapers for Smashing Magazine’s monthly collections for over a year now, and every time it’s a very fun and challenging mission. In this article, I would like to share how I approach all stages of the process and provide …</p>
-									<div class="read_article">
-										<a href="https://www.smashingmagazine.com/2016/11/how-to-create-a-dramatic-vector-illustration/" target="_blank">Read full article</a>
-									</div>
+                                    <div class="read-text">
+										<h3>How to create a dramatic vector illustration</h3>
+                                        <p>Published on Smashing Magazine</p>
+                                        <p>I have been drawing desktop wallpapers for Smashing Magazine’s monthly collections for over a year now, and every time it’s a very fun and challenging mission. In this article, I would like to share how I approach all stages of the process and provide …</p>
+                                        <div class="read_article">
+                                            <a href="https://www.smashingmagazine.com/2016/11/how-to-create-a-dramatic-vector-illustration/" target="_blank">Read full article</a>
+                                        </div>
+                                    </div>
+                                    <img src="images/understand-humans-better.png" alt="Understand humans better">
 								</div>
-							</div>
-						</section>
+                            </section>
+                            <section>                                
+                                <div class="read-flex">
+                                    <div class="read-text">
+										<h3>Find a friend, boost your creativity, and make your digital dream come true</h3>
+                                        <p>Published on Smashing Magazine</p>
+                                        <p>Are you passionate about something? Do you have a secret project? Not something that will change the world (though who knows?), but will definitely change you? Do you have a friend who complements your skills? Has anyone recently asked …</p>
+                                        <div class="read_article">
+                                            <a href="https://www.smashingmagazine.com/2016/06/make-your-digital-dream-come-true/" target="_blank">Read full article</a>
+                                        </div>
+                                    </div>
+									<img src="images/leave-your-comfort-zone.png" alt="Leave your comfort zone">
+                                </div>
+                            </section>
+                        </article>
+                    </main>
+                    <footer>
+                        <h2>Drop me a line</h2>
+                        <p id="literally">Literally. Drag and drop the line on the box, and I will get notified.</p>
+                        <!--Drop me a line-->
+                        <div id="game">
+                            <div id="no-move">
+                                <div id="outer-zone" class="same-zones">
+                                    <div id="inner-zone" class="same-zones"></div>
+                                </div>
+                            </div>
+                            <div class="boundary">
+                                <div id="green-line" class="drag-drop"></div>
+                            </div>
+                        </div>
 						<section>
-							<h3>Find a friend, boost your creativity, and make your digital dream come true</h3>
-							<div class="line"></div>
-							<div class="read_flex">
-								<img src="images/leave-your-comfort-zone.png" alt="Leave your comfort zone">
-								<div class="read_text">
-									<p>Published on Smashing Magazine</p>
-									<p>Are you passionate about something? Do you have a secret project? Not something that will change the world (though who knows?), but will definitely change you? Do you have a friend who complements your skills? Has anyone recently asked …</p>
-									<div class="read_article">
-										<a href="https://www.smashingmagazine.com/2016/06/make-your-digital-dream-come-true/" target="_blank">Read full article</a>
-									</div>
-								</div>
-							</div>
-						</section>
-					</article>
-				</main>
-				<footer class="marg_left">
-					<h2>Drop me a line</h2>
-					<p id="literally">Literally. Drag and drop the line on the box, and I will get notified.</p>
-					
-					
-					
-					
-					<!--Drop me a line-->
-					<div id="game">
-						<div id="no-move">
-							<div id="outer-zone" class="same-zones">
-							<div id="inner-zone" class="same-zones"></div>
-							</div>
-						</div>
-						<div class="boundary">
-							<div id="green-line" class="drag-drop"></div>
-						</div>
-					</div>
-					
-					
-					<h3 class="no-displ">Email me</h3>
-					<p>I am currently not accepting any new projects, but that doesn’t mean you have to keep yourself from saying hi or getting connected.</p>
-					<div id="mail">
-						<a href="mailto:igor.izhik@gmail.com" target="_top">Email me</a>
-					</div>
-					<h3>Stealth mode</h3>
-					<p>I am pretty active on social media, so please feel free to check out my daily activities there.</p>
-					<ul id="social">
-						<li><a href="http://linkedin.com/in/izhik"><img src="images/icn_linkedin.svg" alt="Linkedin"></a></li>
-						<li><a href="https://twitter.com/igorizhik"><img src="images/icn_twitter.svg" alt="Twitter"></a></li>
-						<li><a href="https://dribbble.com/izhik"><img src="images/icn_dribbble.svg" alt="Dribbble"></a></li>
-						<li><a href="http://instagram.com/igor.izhik"><img src="images/icn_instagram.svg" alt="Instagram"></a></li>
-						<li><a href="https://angel.co/izhik"><img src="images/icn_angellist.svg" alt="Angellist"></a></li>
-					</ul>
-				</footer>
-			</div>
-		</div>
-	</div>
-	<script>
+                        <h2>Stealth mode</h2>
+                        <p>I am pretty active on social media, so please feel free to check out my daily activities there.</p>
+                        <ul id="social">
+                            <li>
+                                <a href="http://linkedin.com/in/izhik">
+                                    <img src="images/icn_linkedin.svg" alt="Linkedin">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://dribbble.com/izhik">
+                                    <img src="images/icn_dribbble.svg" alt="Dribbble">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://instagram.com/igor.izhik">
+                                    <img src="images/icn_instagram.svg" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/igorizhik">
+                                    <img src="images/icn_twitter.svg" alt="Twitter">
+                                </a>
+                            </li>
+						</ul>
+					</section>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script>
 		function showMenu() {
 			document.getElementById("overlay").style.display = "flex";
 			document.getElementById("menu_close").style.display = "block";
@@ -208,8 +240,8 @@
 			document.getElementById("menu").style.display = "initial";
 			document.getElementById("hide").style.display = "initial";
 		}
-	</script>
-	<script>
+        </script>
+        <script>
 		$(function() {
 			var viewportHeight = $(window).height();
 			
@@ -292,15 +324,10 @@
 			};
 			};
 		});
-			
-	</script>
-	
-	
-<!-- Global site tag (gtag.js) - Google Analytics -->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28473723-1"></script>
-
-<script>
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28473723-1"></script>
+        <script>
 
   window.dataLayer = window.dataLayer || [];
 
@@ -310,8 +337,6 @@
 
 
   gtag('config', 'UA-28473723-1');
-
-</script>
-</body>
-
+        </script>
+    </body>
 </html>
