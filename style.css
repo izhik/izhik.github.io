@@ -17,7 +17,10 @@ body {
 	max-width: 1140px;
 	position: relative;
 }
-
+hr{
+	border: 0;
+	border-top: 1px solid #D5DADF;
+}
 /* fonts start */
 p {
 	margin-bottom: 1.25rem;
@@ -47,6 +50,7 @@ h3 {
 
 }
 
+/*
 ul {
 	margin: 1rem 0 1rem 2rem;
 }
@@ -55,7 +59,7 @@ ul li {
 	list-style-type: disc;
 	padding: 0.25rem 0.5rem;
 }
-
+*/
 /*
 h3::after {
 	content: "";
@@ -251,7 +255,7 @@ article#works img {
 }
 
 section img {
-	border-radius: 4px;
+	border-radius: 0.75rem;
 	box-shadow: 0 20px 40px #D3DFF3;
 }
 
@@ -408,38 +412,50 @@ div#game {
 ul#social {
 	display: flex;
 	flex-wrap: wrap;
-
+	margin: 0;
+	margin-top: 2rem;
+	align-items: center;
 }
 
 ul#social li {
 	list-style: none;
-	width: 4rem;
 	margin-right: 2rem;
-	margin-top: 2rem;
+
 }
 
 ul#social img {
 	box-shadow: none;
+	width: 3rem;
 }
 
+ul#social img:hover {
+	opacity: 0.6;
+	transition: all 0.2s ease-in-out;
+}
 
 @media only screen and (max-width: 768px) {
 	div#wrapper {
 		width: 80%;
 	}
 
+	nav {
+		width: auto;
+	}
+
+	main {
+		margin: 4rem 0 4rem 0;
+	}
+
 	div#overf {
-		overflow-x: hidden;
+		/*		overflow-x: hidden;*/
 		/*for overlay*/
 		position: relative;
 		/*for desk*/
 		min-width: 320px;
 	}
 
-	.marg-left {
-		align-items: flex-start;
-		/*align nav to flex-start not center*/
-		margin: auto;
+	.head-flex {
+		margin: 0;
 	}
 
 	div#wrapper {
@@ -452,16 +468,13 @@ ul#social img {
 	}
 
 	button#menu {
-		display: initial;
-		position: absolute;
-		right: 0;
-		transform: translate(0, -30%);
-		/*z-index: 1;*/
+		display: block;
+		border-radius: 0.375rem;
 		background-color: black;
 		color: white;
-		font: 800 0.8em 'Merriweather', sans-serif;
+		font: 600 0.8em 'Merriweather', sans-serif;
 		border: none;
-		padding: 1.5em 2em;
+		padding: 1rem 2rem;
 	}
 
 	button#menu_close {
@@ -530,9 +543,6 @@ ul#social img {
 		width: 100%;
 	}
 
-	article#works section:not(:last-of-type) {
-		margin-bottom: 3rem;
-	}
 
 	div.read-flex {
 		flex-direction: column;
@@ -540,8 +550,8 @@ ul#social img {
 
 	div.read-flex img {
 		width: 100%;
-		margin-right: 0;
-		margin-bottom: 3rem;
+		margin: 2rem 0 0;
+
 	}
 
 	div.read-text {
@@ -564,6 +574,22 @@ ul#social img {
 
 	div#mail {
 		width: 40%;
+	}
+
+	div.hero {
+		flex-direction: column;
+
+	}
+
+	div.hero img {
+		width: 200px;
+		align-self: center;
+		margin-top: 0;
+	}
+
+	div.hero-text {
+		width: 100%;
+		margin: 0;
 	}
 }
 
@@ -592,12 +618,13 @@ ul#social img {
 
 @media only screen and (max-width: 420px) {
 	ul#social li {
-		width: 20%;
+		/*		width: 20%;*/
 	}
 
 	ul#overlay li {
 		width: 50%;
 	}
+
 }
 
 @media only screen and (min-width: 1440px) {
@@ -634,6 +661,7 @@ a:hover {
 		a.underline {
 			margin-top: 2rem;
 		}
+
 	}
 
 	a.underline {
@@ -644,6 +672,11 @@ a:hover {
 	@media only screen and (max-width: 400px) {
 		h1 {
 			font-size: 3rem;
+		}
+
+		div.hero {
+			flex-direction: column;
+
 		}
 	}
 
