@@ -143,13 +143,14 @@ ul#overlay li {
 
 nav a,
 ul#overlay a,
-div.read_article a,
+div.read-article a,
 .btn,
 #mail a {
 	text-decoration: none;
 	color: inherit;
 	display: inline-block;
 	width: 100%;
+	white-space: nowrap;
 	padding: 0.5rem 1.5rem;
 	border-radius: 0.25rem;
 	transition: background-color 0.5s;
@@ -171,7 +172,7 @@ div#mail:hover {
 	border-radius: 0.25rem;
 }
 
-div.read_article:hover {
+div.read-article:hover {
 	text-decoration: none;
 	color: white;
 	background-color: #262626;
@@ -304,7 +305,7 @@ div.hero-text {
 	margin-right: 5%;
 }
 
-div.read_article {
+div.read-article {
 	width: 40%;
 	min-width: 200px;
 	text-align: center;
@@ -605,7 +606,7 @@ ul#social img:hover {
 
 
 	div#mail,
-	div.read_article {
+	div.read-article {
 		width: 100%;
 	}
 
@@ -646,7 +647,7 @@ a:hover {
 
 
 @media only screen and (min-width: 769px) {
-	div.read_article {
+	div.read-article {
 		display: inline-block;
 		margin-right: 3rem;
 	}
