@@ -26,7 +26,7 @@ hr {
 /* fonts start */
 p {
 	margin-bottom: 1.25rem;
-	font: 1.125rem 'Libre+Franklin', sans-serif;
+	font: 300 1.125rem 'Libre+Franklin', sans-serif;
 	line-height: 1.5;
 	color: #33373E;
 }
@@ -50,6 +50,15 @@ h3 {
 	margin-bottom: 1rem;
 
 
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	opacity: 0.75;
 }
 
 /*
@@ -146,7 +155,7 @@ ul#overlay li {
 nav a,
 ul#overlay a,
 div.read-article a,
-.btn,
+a.btn,
 #mail a {
 	text-decoration: none;
 	color: inherit;
@@ -166,6 +175,7 @@ div.read-article a,
 }
 
 nav a:hover,
+a.btn:hover,
 div#mail:hover {
 	text-decoration: none;
 	color: white;
@@ -274,6 +284,7 @@ div.read-flex {
 	display: flex;
 	width: 100%;
 }
+
 div.read-flex img {
 	width: 35%;
 	align-self: flex-start;
@@ -308,6 +319,15 @@ div.read-article {
 	border: solid black 3px;
 	border-radius: 0.375rem;
 	margin-top: 1.5rem;
+	font: 600 1.25rem 'Merriweather', sans-serif;
+	transition: background-color 0.5s;
+}
+
+a.btn {
+	width: auto;
+	text-align: center;
+	border: solid black 3px;
+	border-radius: 0.375rem;
 	font: 600 1.25rem 'Merriweather', sans-serif;
 	transition: background-color 0.5s;
 }
@@ -545,6 +565,7 @@ ul#social img:hover {
 		flex-direction: column;
 	}
 
+
 	div.read-flex img {
 		width: 100%;
 		margin: 2rem 0 0;
@@ -600,7 +621,9 @@ ul#social img:hover {
 		margin-bottom: 5rem;
 	}
 
-
+	div.read-flex{
+		width: auto;
+	}
 	div#mail,
 	div.read-article {
 		width: 100%;
@@ -631,14 +654,7 @@ ul#social img:hover {
 }
 
 /*portfolio*/
-a {
-	color: black;
-	text-decoration: underline;
-}
 
-a:hover {
-	text-decoration: none;
-}
 
 
 
@@ -658,6 +674,8 @@ a:hover {
 		a.underline {
 			margin-top: 2rem;
 		}
+
+		width: 100%;
 
 	}
 
@@ -683,21 +701,16 @@ a:hover {
 		grid-row-gap: 2rem;
 		margin-top: 2rem;
 		margin-bottom: 8rem;
-	}
-
-	article.grid2 {
-		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-	}
-
-	article.grid3 {
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 
-	article.grid4 {
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	.grid img {
+		width: 300px;
+		height: 300px;
+
 	}
 
-	figure img {
+	article figure img {
 		object-fit: cover;
 		object-position: 0 0;
 		vertical-align: top;
@@ -718,10 +731,6 @@ a:hover {
 		outline: none;
 	}
 
-	figcaption {
-		margin-top: 1rem;
-		font: 600 1rem 'Nunito', sans-serif;
-	}
 
 	figure {
 		text-align: center;
@@ -757,22 +766,6 @@ article.prototypes a:before {
 
 }
 
-.grid2 img {
-	width: 500px;
-	height: 500px;
-}
-
-.grid3 img {
-	width: 300px;
-	height: 300px;
-}
-
-.grid4 img {
-	width: 200px;
-	height: 200px;
-
-}
-
 img.icon {
 	width: 1rem;
 	height: 1rem;
@@ -797,3 +790,103 @@ img.icon {
 	color: white;
 	top: -2px;
 }
+
+
+/*portfolio start*/
+@media only screen and (min-width: 769px) {
+	nav a.active {
+		background-color: #262626;
+		color: white;
+	}
+
+	div.read-article {
+		display: inline-block;
+		margin-right: 3rem;
+	}
+
+	a.underline {
+		font: 800 1.2rem 'Nunito', sans-serif;
+		text-decoration: underline;
+		display: inline-block;
+	}
+
+
+	a.underline {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	a.underline {
+		margin-top: 2rem;
+	}
+
+	figure img {
+
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+		object-position: 0 0;
+		vertical-align: top;
+
+	}
+
+	article.grid {
+		display: grid;
+		grid-column-gap: 2rem;
+		grid-row-gap: 2rem;
+		margin-top: 2rem;
+		margin-bottom: 8rem;
+	}
+}
+
+/*portfolio end*/
+
+/*illustrations start*/
+
+
+@media only screen and (max-width: 400px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+}
+
+article#illustr {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-column-gap: 2rem;
+	grid-row-gap: 2rem;
+	margin-top: 4rem;
+}
+
+figure img {
+	width: 100%;
+	vertical-align: top;
+	box-shadow: 0 20px 40px #D3DFF3;
+	background-color: transparent !important;
+	outline: none;
+}
+
+figure img:focus,
+figure a:focus {
+	outline: none;
+}
+
+figcaption {
+	margin-top: 1rem;
+}
+
+figure {
+	text-align: center;
+}
+
+.fancybox-custom .fancybox-button {
+	background: transparent;
+}
+
+.fancybox-custom img {
+	cursor: default;
+}
+
+/*illustrations end*/

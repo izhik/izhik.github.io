@@ -53,15 +53,15 @@ ul li {
 		margin-bottom: 8rem;
 	}
 
-	article.grid2 {
+	article. {
 		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	}
 
-	article.grid3 {
+	article. {
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 
-	article.grid4 {
+	article. {
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
 
@@ -125,16 +125,16 @@ article.prototypes a:before {
 	transition: all 2s ease-in-out;
 
 }
-	.grid2 img{
+	. img{
 		width: 500px;
 		height: 500px;
 	}
 
-	.grid3 img{
+	. img{
 		width: 300px;
 		height: 300px;
 	}
-	.grid4 img{
+	. img{
 		width: 200px;
 		height: 200px;
 	
