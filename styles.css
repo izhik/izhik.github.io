@@ -60,12 +60,14 @@ a:hover {
 	text-decoration: none;
 	opacity: 0.75;
 }
+
 /* fonts end */
 
 /* blocks start */
 section {
 	margin-top: 3rem;
 }
+
 /* blocks end */
 
 .margin-top {
@@ -146,12 +148,6 @@ a.btn {
 	-webkit-tap-highlight-color: transparent;
 }
 
-@media only screen and (max-width: 1024px) {
-	nav a {
-		padding: 0.5rem 0.5rem;
-	}
-}
-
 nav a:hover,
 a.btn:hover {
 	text-decoration: none;
@@ -179,7 +175,7 @@ blockquote {
 	border-left: 0.25rem solid #D5DADF;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 
 	button#menu,
 	button#menu_close,
@@ -289,19 +285,9 @@ div.hero-text {
 	margin-right: 5%;
 }
 
-div.read-article {
-	width: 40%;
-	min-width: 200px;
-	text-align: center;
-	border: solid black 3px;
-	border-radius: 0.375rem;
-	margin-top: 1.5rem;
-	font: 600 1.25rem 'Merriweather', sans-serif;
-	transition: background-color 0.5s;
-}
-
 a.btn {
 	width: auto;
+	margin-bottom: 1rem;
 	text-align: center;
 	border: solid black 3px;
 	border-radius: 0.375rem;
@@ -571,9 +557,6 @@ ul#social img:hover {
 		width: auto;
 	}
 
-	div.read-article {
-		width: 100%;
-	}
 
 	ul#overlay li {
 		width: 50%;
@@ -605,30 +588,9 @@ ul#social img:hover {
 
 
 
-@media only screen and (min-width: 769px) {
-	div.read-article {
-		display: inline-block;
-		margin-right: 3rem;
-	}
+@media only screen and (min-width: 768px) {
 
-	a.underline {
-		font: 800 1.2rem 'Nunito', sans-serif;
-		text-decoration: underline;
-		display: inline-block;
-	}
 
-	@media only screen and (max-width: 600px) {
-		a.underline {
-			margin-top: 2rem;
-		}
-
-		width: 100%;
-
-	}
-
-	a.underline {
-		display: none;
-	}
 
 
 	@media only screen and (max-width: 420px) {
@@ -721,9 +683,12 @@ img.icon {
 .featured {
 	display: flex;
 	border-radius: 0.5rem;
-	margin: 0 -2rem;
 	padding: 2rem;
 	background: #E4E9F0;
+}
+
+.featured ul {
+	margin: 0 1rem 1rem;
 }
 
 .pdf:before {
@@ -740,34 +705,14 @@ img.icon {
 
 
 /*portfolio start*/
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 	nav a.active {
 		background-color: #262626;
 		color: white;
 	}
-
-	div.read-article {
-		display: inline-block;
-		margin-right: 3rem;
-	}
-
-	a.underline {
-		font: 800 1.2rem 'Nunito', sans-serif;
-		text-decoration: underline;
-		display: inline-block;
-	}
-
-
-	a.underline {
-		display: none;
-	}
 }
 
 @media only screen and (max-width: 600px) {
-	a.underline {
-		margin-top: 2rem;
-	}
-
 	figure img {
 
 		width: 100%;
