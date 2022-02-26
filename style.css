@@ -17,10 +17,12 @@ body {
 	max-width: 1140px;
 	position: relative;
 }
-hr{
+
+hr {
 	border: 0;
 	border-top: 1px solid #D5DADF;
 }
+
 /* fonts start */
 p {
 	margin-bottom: 1.25rem;
@@ -272,12 +274,6 @@ div.read-flex {
 	display: flex;
 	width: 100%;
 }
-
-div.read-flex:hover {
-	cursor: pointer;
-}
-
-
 div.read-flex img {
 	width: 35%;
 	align-self: flex-start;
