@@ -1,168 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-        <title>About me - Igor Izhik - Product Designer</title>
-        <link href="styles.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,600|Libre+Franklin:600" rel="stylesheet">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon/favicon-32x32.png"
-        >
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon/favicon-16x16.png"
-        >
-        <link rel="manifest" href="/favicon/site.webmanifest">
-        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="/favicon/favicon.ico">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-config" content="/favicon/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-        <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
-        <script src="DropLine.js"></script>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-5S9D5LZ');
-        </script>
-        <!-- End Google Tag Manager -->
-    </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-5S9D5LZ"
-                height="0"
-                width="0"
-                style="display:none;visibility:hidden"
-            ></iframe>
-        </noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <div id="overf">
-            <header class="head-flex marg-left">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/izhik-logo.svg" alt="izhik-logo">
-                        <span>Igor Izhik</span>
-                    </a>
-                </div>
-                <nav>
-                    <ul id="nav_menu">
-                        <li>
-                            <a class="active" href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="products.html">Products</a>
-                        </li>
-                        <li>
-                            <a href="animations.html">Animations</a>
-                        </li>
-                        <li>
-                            <a href="illustrations.html">Illustrations</a>
-                        </li>
-                    </ul>
-                    <button type="button" id="menu" onclick="showMenu()">MENU</button>
-                    <button type="button" id="menu_close" onclick="closeMenu()">
-                        <img src="images/icn_close.svg" alt="close">
-                    </button>
-                    <ul id="overlay">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>About me - Igor Izhik - Product Designer</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,600|Libre+Franklin:600" rel="stylesheet">
 
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="products.html">Products</a>
-                        </li>
-                        <li>
-                            <a href="animations.html">Animations</a>
-                        </li>
-                        <li>
-                            <a href="illustrations.html">Illustrations</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <div id="wrapper">
-                <div id="hide">
-                    <main>
-                        <h1>About</h1>
-                        <p>
-                            Hi, my name is Igor. I am a full-stack designer (a designer who researches, designs, writes and codes) building products and teams since 2004. Currently I'm a Principal Product Designer at Litmus working remotely from Grodno, Belarus. <a href="https://www.nngroup.com/ux-certification/verify/" target="_blank">UX certified</a> by Nielsen Norman Group with UX Management specialty.
-                        </p>
-                        <p>
-                            I am a big advocate for the user and for the team. Every product is built for the user, and collaboration is a key component of building a great product. At the same time, I am a big advocate for business. I challenge best practices, experimenting and weeding out what doesn’t work. I am working on my own products solving user problems, always learning along the way and improving my design processes. Building my own products helps me to get experience in the areas I am not comfortable with, and innovate.
-                            <br>
-                            <br>
-                            I have a perfect blend of expertise in user experience, visual design, illustration, and animation.
-                            <br>
-                            <br>
-                            I don’t take myself too seriously, that’s reserved for what I do.
-                        </p>
-<section>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+    <script src="DropLine.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5S9D5LZ');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S9D5LZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="overf">
+        <header class="head-flex marg-left">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/izhik-logo.svg" alt="izhik-logo">
+                    <span>Igor Izhik</span>
+                </a>
+            </div>
+            <nav>
+                <ul id="nav_menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="active" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="animations.html">Animations</a>
+                    </li>
+                    <li>
+                        <a href="illustrations.html">Illustrations</a>
+                    </li>
+                </ul>
+                <button type="button" id="menu" onclick="showMenu()">MENU</button>
+                <button type="button" id="menu_close" onclick="closeMenu()">
+                    <img src="images/icn_close.svg" alt="close">
+                </button>
+                <ul id="overlay">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="animations.html">Animations</a>
+                    </li>
+                    <li>
+                        <a href="illustrations.html">Illustrations</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="wrapper">
+            <div id="hide">
+                <main>
+                    <h1>About</h1>
+                    <p>
+                        Hi, my name is Igor. I am a full-stack designer (a designer who researches, designs, writes and
+                        codes) building products and teams since 2004. Currently I'm a Principal Product Designer at
+                        Litmus working remotely from Grodno, Belarus. <a
+                            href="https://www.nngroup.com/ux-certification/verify/" target="_blank">UX certified</a> by
+                        Nielsen Norman Group with UX Management specialty.
+                    </p>
+                    <p>
+                        I am a big advocate for the user and for the team. Every product is built for the user, and
+                        collaboration is a key component of building a great product. At the same time, I am a big
+                        advocate for business. I challenge best practices, experimenting and weeding out what doesn’t
+                        work. I am working on my own products solving user problems, always learning along the way and
+                        improving my design processes. Building my own products helps me to get experience in the areas
+                        I am not comfortable with, and innovate.
+                        <br>
+                        <br>
+                        I have a perfect blend of expertise in user experience, visual design, illustration, and
+                        animation.
+                        <br>
+                        <br>
+                        I don’t take myself too seriously, that’s reserved for what I do.
+                    </p>
+                    <section>
                         <h2>What my clients say</h2>
                         <blockquote>
-                            <p>I’ve been lucky enough to work with Igor on several projects, both personal and professional. Igor’s ability to generate concepts consistently leaves me in awe, and his dedication to finding the best solution, not just ‘a’ solution, is what sets him apart from many other designers and creatives. The only reason I’m hesitant to recommend Igor is that I don’t want him to be booked up when I want to team up with him again.</p>
+                            <p>I’ve been lucky enough to work with Igor on several projects, both personal and
+                                professional. Igor’s ability to generate concepts consistently leaves me in awe, and his
+                                dedication to finding the best solution, not just ‘a’ solution, is what sets him apart
+                                from many other designers and creatives. The only reason I’m hesitant to recommend Igor
+                                is that I don’t want him to be booked up when I want to team up with him again.</p>
                             <p>&mdash; Rob Mann, Head of Communities, Crew</p>
                         </blockquote>
                         <blockquote>
-                            <p>Igor was fantastic to work with. I couldn't be happier with the finished product. From the moment we started discussing the project, Igor came with great enthusiasm and amazing ideas. On top of that, he could also execute on the ideas above and beyond my expectations. I would highly recommend working with Igor.</p>
+                            <p>Igor was fantastic to work with. I couldn't be happier with the finished product. From
+                                the moment we started discussing the project, Igor came with great enthusiasm and
+                                amazing ideas. On top of that, he could also execute on the ideas above and beyond my
+                                expectations. I would highly recommend working with Igor.</p>
                             <p>&mdash; Ashley Read, Founder, PostReach</p>
                         </blockquote>
                         <blockquote>
                             <p>
-                                Igor is a pleasure to work with and a true artist. He brought great ideas and a point of view to the table during the idea phase, was great at communicating and revising based on feedback, and executed everything above my expectations.
+                                Igor is a pleasure to work with and a true artist. He brought great ideas and a point of
+                                view to the table during the idea phase, was great at communicating and revising based
+                                on feedback, and executed everything above my expectations.
                             </p>
                             <p>&mdash; Josh Hubball, Founder, Level Frames</p>
                         </blockquote>
                         <blockquote>
-                            <p>Igor was great - he delivered beyond my expectations and I can't wait to work with him again! One of the best outsourcers I've ever dealt with.</p>
+                            <p>Igor was great - he delivered beyond my expectations and I can't wait to work with him
+                                again! One of the best outsourcers I've ever dealt with.</p>
                             <p>&mdash; Jason Gill, Founder, Pressley</p>
                         </blockquote>
-						</section>
-                    </main>
-                </div>
+                    </section>
+                </main>
             </div>
         </div>
-        <script>
-		function showMenu() {
-			document.getElementById("overlay").style.display = "flex";
-			document.getElementById("menu_close").style.display = "block";
-			document.getElementById("menu").style.display = "none";
-			document.getElementById("hide").style.display = "none";
-		}
+    </div>
+    <script>
+        function showMenu() {
+            document.getElementById("overlay").style.display = "flex";
+            document.getElementById("menu_close").style.display = "block";
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("hide").style.display = "none";
+        }
 
-		function closeMenu() {
-			document.getElementById("overlay").style.display = "none";
-			document.getElementById("menu_close").style.display = "none";
-			document.getElementById("menu").style.display = "initial";
-			document.getElementById("hide").style.display = "initial";
-		}
-        </script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28473723-1"></script>
-        <script>
+        function closeMenu() {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("menu_close").style.display = "none";
+            document.getElementById("menu").style.display = "initial";
+            document.getElementById("hide").style.display = "initial";
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28473723-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-  function gtag(){dataLayer.push(arguments);}
-
-  gtag('js', new Date());
+        gtag('js', new Date());
 
 
-  gtag('config', 'UA-28473723-1');
-        </script>
-    </body>
+        gtag('config', 'UA-28473723-1');
+    </script>
+</body>
+
 </html>
