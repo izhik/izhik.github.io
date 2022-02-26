@@ -581,7 +581,7 @@ ul#social img:hover {
 	}
 
 	div#game,
-	.no-display {
+	section.no-display {
 		display: none;
 	}
 
