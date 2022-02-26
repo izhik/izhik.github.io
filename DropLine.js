@@ -57,7 +57,7 @@ function dragMoveListener (event) {
 				};
 			},
 				ondrop: function (event) {
-				event.relatedTarget.classList.add('no-displ');
+				event.relatedTarget.classList.add('no-display');
 					outer.style.border = "none";
 					//background color of body
 					outer.style.backgroundColor = "#F7FAFF";

@@ -60,35 +60,14 @@ a:hover {
 	text-decoration: none;
 	opacity: 0.75;
 }
-
-/*
-ul {
-	margin: 1rem 0 1rem 2rem;
-}
-
-ul li {
-	list-style-type: disc;
-	padding: 0.25rem 0.5rem;
-}
-*/
-/*
-h3::after {
-	content: "";
-	position: absolute;
-	width: 8rem;
-	height: 0.5rem;
-	left: -1rem;
-	bottom: -1rem;
-	background-color: yellowgreen;
-	z-index: -1;
-}*/
 /* fonts end */
+
 /* blocks start */
 section {
 	margin-top: 3rem;
 }
-
 /* blocks end */
+
 .margin-top {
 	margin-top: 2rem;
 }
@@ -155,8 +134,7 @@ ul#overlay li {
 nav a,
 ul#overlay a,
 div.read-article a,
-a.btn,
-#mail a {
+a.btn {
 	text-decoration: none;
 	color: inherit;
 	display: inline-block;
@@ -175,8 +153,7 @@ a.btn,
 }
 
 nav a:hover,
-a.btn:hover,
-div#mail:hover {
+a.btn:hover {
 	text-decoration: none;
 	color: white;
 	background-color: #262626;
@@ -340,32 +317,10 @@ article#read section:not(:last-of-type) {
 	margin-bottom: 5rem;
 }
 
-
-
-
 footer p:nth-of-type(2) {
 	display: inline-block;
 	margin-right: 3rem;
 }
-
-#mail {
-	font: 800 1.2rem 'Merriweather', sans-serif;
-	display: inline-block;
-	width: 18%;
-	min-width: 200px;
-	text-align: center;
-	border: solid black 3px;
-	border-radius: 2px;
-	transition: background-color 0.5s;
-	/*hover*/
-	margin-top: 1rem;
-}
-
-.no-displ {
-	display: none;
-}
-
-
 
 #no-move {
 	/*width of outer-zone + a couple px*/
@@ -581,12 +536,8 @@ ul#social img:hover {
 	}
 
 	div#game,
-	section.no-display {
+	.no-display {
 		display: none;
-	}
-
-	div#mail {
-		width: 40%;
 	}
 
 	div.hero {
@@ -616,10 +567,10 @@ ul#social img:hover {
 		margin-bottom: 5rem;
 	}
 
-	div.read-flex{
+	div.read-flex {
 		width: auto;
 	}
-	div#mail,
+
 	div.read-article {
 		width: 100%;
 	}
@@ -636,6 +587,7 @@ ul#social img:hover {
 		box-shadow: none;
 		width: 2rem;
 	}
+
 	ul#overlay li {
 		width: 50%;
 	}
