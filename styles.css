@@ -637,10 +637,10 @@ ul#social img:hover {
 }
 
 @media only screen and (max-width: 420px) {
-	ul#social li {
-		/*		width: 20%;*/
+	ul#social img {
+		box-shadow: none;
+		width: 2rem;
 	}
-
 	ul#overlay li {
 		width: 50%;
 	}
@@ -684,9 +684,9 @@ ul#social img:hover {
 	}
 
 
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 420px) {
 		h1 {
-			font-size: 3rem;
+			font-size: 2rem;
 		}
 
 		div.hero {
@@ -845,7 +845,7 @@ img.icon {
 /*illustrations start*/
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
 	h1 {
 		font-size: 3rem;
 	}

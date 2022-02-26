@@ -6096,7 +6096,7 @@ var getStyles = function( elem ) {
 			return;
 		}
 
-		div.style.cssText =
+		div.styles.cssText =
 			"box-sizing:border-box;" +
 			"position:relative;display:block;" +
 			"margin:auto;border:1px;padding:1px;" +
@@ -6138,7 +6138,7 @@ var getStyles = function( elem ) {
 	div.cloneNode( true ).style.backgroundClip = "";
 	support.clearCloneStyle = div.style.backgroundClip === "content-box";
 
-	container.style.cssText = "border:0;width:8px;height:0;top:0;left:-9999px;" +
+	container.styles.cssText = "border:0;width:8px;height:0;top:0;left:-9999px;" +
 		"padding:0;margin-top:1px;position:absolute";
 	container.appendChild( div );
 
