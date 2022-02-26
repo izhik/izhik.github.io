@@ -348,10 +348,6 @@ footer p:nth-of-type(2) {
 	margin-right: 3rem;
 }
 
-/*footer {
-	width: 100%;
-}*/
-
 #mail {
 	font: 800 1.2rem 'Merriweather', sans-serif;
 	display: inline-block;
@@ -584,9 +580,8 @@ ul#social img:hover {
 		margin-top: 2.5rem;
 	}
 
-	#literally,
 	div#game,
-	.no-displ {
+	.no-display {
 		display: none;
 	}
 
