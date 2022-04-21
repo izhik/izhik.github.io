@@ -372,14 +372,10 @@ ul#social img:hover {
 	transition: all 0.2s ease-in-out;
 }
 
-
-
-
 article.prototypes a {
 	position: relative;
 
 }
-
 
 article.prototypes a:before {
 	content: '';
@@ -530,7 +526,7 @@ figure {
 	}
 
 	div#overf {
-		/*		overflow-x: hidden;*/
+		overflow-x: hidden;
 		/*for overlay*/
 		position: relative;
 		/*for desk*/
@@ -735,6 +731,11 @@ figure {
 
 @media only screen and (min-width: 1440px) {
 	h1 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
+}
+
+s {
+	color: #D5DADF;
+	font-size: 2rem;
 }
