@@ -8,29 +8,40 @@
 	<link href="styles.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,600|Libre+Franklin:600" rel="stylesheet">
 	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-config" content="/favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 	<script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
 	<script src="DropLine.js"></script>
 	<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-5S9D5LZ');</script>
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-5S9D5LZ');
+	</script>
 	<!-- End Google Tag Manager -->
 </head>
 
 <body>
 	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S9D5LZ"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S9D5LZ" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	<div id="overf">
 		<header class="head-flex marg-left">
@@ -43,27 +54,6 @@
 			<nav>
 				<ul id="nav_menu">
 					<li>
-                        <a href="index.html">Home</a>
-                    </li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="products.html">Products</a>
-					</li>
-					<li>
-						<a class="active" href="animations.html">Animations</a>
-					</li>
-					<li>
-						<a href="illustrations.html">Illustrations</a>
-					</li>
-				</ul>
-				<button type="button" id="menu" onclick="showMenu()">MENU</button>
-				<button type="button" id="menu_close" onclick="closeMenu()">
-					<img src="images/icn_close.svg" alt="close">
-				</button>
-				<ul id="overlay">
-					<li>
 						<a href="index.html">Home</a>
 					</li>
 
@@ -71,102 +61,158 @@
 						<a href="about.html">About</a>
 					</li>
 					<li>
-						<a href="products.html">Products</a>
-					</li>
-					<li>
-						<a href="animations.html">Animations</a>
-					</li>
-					<li>
-						<a href="illustrations.html">Illustrations</a>
+						<a class="active" href="portfolio.html">Portfolio</a>
 					</li>
 				</ul>
+				<button type="button" id="menu" onclick="showMenu()">MENU</button>
+				<button type="button" id="menu_close" onclick="closeMenu()">
+					<img src="images/icn_close.svg" alt="close">
+				</button>
+                <ul id="overlay">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Litmus</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="animations.html">Animations</a>
+                    </li>
+                    <li>
+                        <a href="illustrations.html">Illustrations</a>
+                    </li>
+                </ul>
 			</nav>
 		</header>
 
 		<div id="wrapper">
 			<div id="hide">
 				<main>
-					
-					<div class="overall marg_left">
-								<div class="overall_text">
-									<h1>Animations</h1>
-						<p>Helping start-ups to visually explain what they do. Hover over the image for the animation to start playing.</p>
+					<div class="head-flex">
+						<h1>Portfolio</h1>
+						<p class="pdf">
+							<a href="/igor_izhik_resume.pdf" target="_blank">Download my résumé</a>
+						</p>
+					</div>
 
-								</div>
-							</div>
-					
+					<ul id="sub-nav-menu">
+						<li>
+							<a href="portfolio.html">Litmus</a>
+						</li>
+
+						<li>
+							<a href="products.html">Products</a>
+						</li>
+						<li>
+							<a class="active" href="animations.html">Animations</a>
+						</li>
+						<li>
+							<a href="illustrations.html">Illustrations</a>
+						</li>
+					</ul>
+					<section>
+						<div class="read-flex featured">
+							<p>Helping start-ups to visually explain what they do. Hover over the image for the
+								animation to start playing.</p>
+						</div>
+					</section>
+
 					<article id="read" class="marg_left">
-						<hr />
+
 						<section>
 							<h3>Crew</h3>
-							 
+
 							<div class="read-flex">
 
 								<div class="read-text">
-									<p>Crew is a marketplace of vetted freelance designers, developers, and studios for hire.</p>
+									<p>Crew is a marketplace of vetted freelance designers, developers, and studios for
+										hire.</p>
 								</div>
-								<img src="images/animation/crew.jpg" onmouseover=this.src="images/animation/crew_special_ops_optimized.gif" onmouseout=this.src="images/animation/crew.jpg" alt="Crew">
+								<img src="images/animation/crew.jpg"
+									onmouseover=this.src="images/animation/crew_special_ops_optimized.gif"
+									onmouseout=this.src="images/animation/crew.jpg" alt="Crew">
 							</div>
 						</section>
 						<hr />
 						<section>
 							<h3>PostReach</h3>
-							 
+
 							<div class="read-flex">
 
 								<div class="read-text">
-									<p>PostReach helps to understand where blogger’s traffic is coming from and who’s talking about their content online.</p>
+									<p>PostReach helps to understand where blogger’s traffic is coming from and who’s
+										talking about their content online.</p>
 								</div>
-								<img src="images/animation/postreach.jpg" onmouseover=this.src="images/animation/postreach_final.gif" onmouseout=this.src="images/animation/postreach.jpg" alt="PostReach">
+								<img src="images/animation/postreach.jpg"
+									onmouseover=this.src="images/animation/postreach_final.gif"
+									onmouseout=this.src="images/animation/postreach.jpg" alt="PostReach">
 							</div>
 						</section>
 						<hr />
 						<section>
 							<h3>Level Frames</h3>
-							 
+
 							<div class="read-flex">
-								
+
 								<div class="read-text">
-									<p>Level allows anyone to find the right frame, at the right size, customized online and delivered to your door.</p>
-								
+									<p>Level allows anyone to find the right frame, at the right size, customized online
+										and delivered to your door.</p>
+
 								</div>
-								<img src="images/animation/level_frames.jpg" onmouseover=this.src="images/animation/levelframes.gif" onmouseout=this.src="images/animation/level_frames.jpg" alt="Level Frames">
+								<img src="images/animation/level_frames.jpg"
+									onmouseover=this.src="images/animation/levelframes.gif"
+									onmouseout=this.src="images/animation/level_frames.jpg" alt="Level Frames">
 							</div>
 						</section>
 						<hr />
 						<section>
 							<h3>Crew</h3>
-							 
+
 							<div class="read-flex">
 
 								<div class="read-text">
 									<p>Searching for a freelancer</p>
 								</div>
-								<img src="images/animation/searching-still.jpg" onmouseover=this.src="images/animation/searching.gif" onmouseout=this.src="images/animation/searching-still.jpg" alt="Searching for a freelancer">
+								<img src="images/animation/searching-still.jpg"
+									onmouseover=this.src="images/animation/searching.gif"
+									onmouseout=this.src="images/animation/searching-still.jpg"
+									alt="Searching for a freelancer">
 							</div>
 						</section>
 						<hr />
 						<section>
 							<h3>Crew</h3>
-							 
+
 							<div class="read-flex">
 
 								<div class="read-text">
 									<p>Submitting a proposal</p>
 								</div>
-								<img src="images/animation/submitting-still.jpg" onmouseover=this.src="images/animation/submitting.gif" onmouseout=this.src="images/animation/submitting-still.jpg" alt="Submitting a proposal">
+								<img src="images/animation/submitting-still.jpg"
+									onmouseover=this.src="images/animation/submitting.gif"
+									onmouseout=this.src="images/animation/submitting-still.jpg"
+									alt="Submitting a proposal">
 							</div>
 						</section>
 						<hr />
 						<section>
 							<h3>Crew</h3>
-							 
+
 							<div class="read-flex">
 
 								<div class="read-text">
 									<p>Starting a proposal over</p>
 								</div>
-								<img src="images/animation/start-over-still.jpg" onmouseover=this.src="images/animation/start-over.gif" onmouseout=this.src="images/animation/start-over-still.jpg" alt="Starting a proposal over">
+								<img src="images/animation/start-over-still.jpg"
+									onmouseover=this.src="images/animation/start-over.gif"
+									onmouseout=this.src="images/animation/start-over-still.jpg"
+									alt="Starting a proposal over">
 							</div>
 						</section>
 
@@ -190,23 +236,23 @@
 			document.getElementById("hide").style.display = "initial";
 		}
 	</script>
-	
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28473723-1"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28473723-1"></script>
 
-<script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-  window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
 
-  function gtag(){dataLayer.push(arguments);}
-
-  gtag('js', new Date());
+		gtag('js', new Date());
 
 
-  gtag('config', 'UA-28473723-1');
-
-</script>
+		gtag('config', 'UA-28473723-1');
+	</script>
 </body>
 
 </html>
