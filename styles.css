@@ -612,8 +612,8 @@ figure {
 
 	button#menu_close {
 		position: absolute;
-		right: 0;
-		transform: translate(0, -30%);
+		right: 1rem;
+		top: 0;
 		background-color: transparent;
 		z-index: 3;
 		border: none;
