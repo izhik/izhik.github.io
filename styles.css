@@ -541,6 +541,9 @@ figure {
 		margin-top: 2rem;
 		margin-bottom: 8rem;
 	}
+	.head-flex {
+		flex-direction: row;
+	}
 
 	div#align_right div {
 		position: static;
@@ -593,6 +596,7 @@ figure {
 
 	.head-flex {
 		margin: 0;
+		flex-direction: row;
 	}
 
 	div#wrapper {
