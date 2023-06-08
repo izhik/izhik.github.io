@@ -560,10 +560,6 @@ figure {
 		font-size: 1.25em;
 	}
 
-	.head-flex {
-		flex-direction: row;
-	}
-
 	ul#sub-nav-menu {
 		display: none;
 	}
