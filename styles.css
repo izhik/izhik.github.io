@@ -102,9 +102,7 @@ header {
 	top: 0;
 	background-color: #F7FAFF;
 	z-index: 1;
-
 	margin: 1rem auto;
-
 	padding: 1rem 5%;
 }
 
@@ -139,17 +137,11 @@ ul#sub-nav-menu {
 
 ul#sub-nav-menu a {
 	border-bottom: 0.125rem solid transparent;
-
 	text-decoration: none;
-
 	display: inline-block;
 	width: 100%;
 	white-space: nowrap;
 	padding: 0.5rem 1rem;
-
-
-
-
 }
 
 ul#sub-nav-menu a:hover {
@@ -438,7 +430,7 @@ img.icon {
 }
 
 .featured {
-	
+
 	border-radius: 0.5rem;
 	padding: 2rem;
 	background: #EBF4F9;
