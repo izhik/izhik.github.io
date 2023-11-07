@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>The Scientist and ... comic strips - Igor Izhik</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,600|Libre+Franklin:600" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+    <script src="DropLine.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5S9D5LZ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5S9D5LZ');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S9D5LZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="overf">
+        <header class="marg-left">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/izhik-logo.svg" alt="izhik-logo">
+                    <span>Igor Izhik</span>
+                </a>
+            </div>
+            <nav>
+                <ul id="nav_menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="active" href="portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+                <button type="button" id="menu" onclick="showMenu()">MENU</button>
+                <button type="button" id="menu_close" onclick="closeMenu()">
+                    <img src="images/icn_close.svg" alt="close">
+                </button>
+                <ul id="overlay">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Litmus</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="animations.html">Animations</a>
+                    </li>
+                    <li>
+                        <a href="illustrations.html">Illustrations</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="wrapper">
+            <div id="hide">
+                <main>
+                    <div class="head-flex">
+                        <h1>The scientist and...</h1>
+                    </div>
+   
+                    <section>
+                        <article class="grid ">
+                            <figure>
+                                <a href="images/the-scientist/001_scientist_and_pigs.jpg" data-fancybox>
+                                    <img src="images/the-scientist/001_scientist_and_pigs.jpg">
+                                </a>
+                                <figcaption>001. The Scientist and pigs</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/002_scientist_and_a_rocket.jpg" data-fancybox>
+                                    <img src="images/the-scientist/002_scientist_and_a_rocket.jpg">
+                                </a>
+                                <figcaption>002. The Scientist and a rocket</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/003_scientist_and_stars.jpg" data-fancybox>
+                                    <img src="images/the-scientist/003_scientist_and_stars.jpg">
+                                </a>
+                                <figcaption>003. The Scientist and the stars</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/004_scientist_and_a_bear.jpg" data-fancybox>
+                                    <img src="images/the-scientist/004_scientist_and_a_bear.jpg">
+                                </a>
+                                <figcaption>004. The Scientist and a bear</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/005_scientist_and_a_mirror.jpg" data-fancybox>
+                                    <img src="images/the-scientist/005_scientist_and_a_mirror.jpg">
+                                </a>
+                                <figcaption>005. The Scientist and a mirror</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/006_scientist_and_moustache.jpg" data-fancybox>
+                                    <img src="images/the-scientist/006_scientist_and_moustache.jpg">
+                                </a>
+                                <figcaption>006. The Scientist and moustache</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/007_scientist_and_a_banana.jpg" data-fancybox>
+                                    <img src="images/the-scientist/007_scientist_and_a_banana.jpg">
+                                </a>
+                                <figcaption>007. The Scientist and a banana</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/008_scientist_and_pistachio_ice_cream.jpg" data-fancybox>
+                                    <img src="images/the-scientist/008_scientist_and_pistachio_ice_cream.jpg">
+                                </a>
+                                <figcaption>008. The Scientist and pistachio ice cream</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/009_scientist_and_a_monkey.jpg" data-fancybox>
+                                    <img src="images/the-scientist/009_scientist_and_a_monkey.jpg">
+                                </a>
+                                <figcaption>009. The Scientist and a monkey</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/010_scientist_and_a_ball.jpg" data-fancybox>
+                                    <img src="images/the-scientist/010_scientist_and_a_ball.jpg">
+                                </a>
+                                <figcaption>010. The Scientist and a ball</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/011_scientist_and_insomnia.jpg" data-fancybox>
+                                    <img src="images/the-scientist/011_scientist_and_insomnia.jpg">
+                                </a>
+                                <figcaption>011. The Scientist and insomnia</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/012_scientist_and_rain.jpg" data-fancybox>
+                                    <img src="images/the-scientist/012_scientist_and_rain.jpg">
+                                </a>
+                                <figcaption>012. The Scientist and the rain</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/013_scientist_and_rosemary.jpg" data-fancybox>
+                                    <img src="images/the-scientist/013_scientist_and_rosemary.jpg">
+                                </a>
+                                <figcaption>013. The Scientist and rosemary</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/014_scientist_and_energy.jpg" data-fancybox>
+                                    <img src="images/the-scientist/014_scientist_and_energy.jpg">
+                                </a>
+                                <figcaption>014. The Scientist and energy</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/015_scientist_and_an_apple.jpg" data-fancybox>
+                                    <img src="images/the-scientist/015_scientist_and_an_apple.jpg">
+                                </a>
+                                <figcaption>015. The Scientist and an apple</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/016_scientist_and_a_sunset.png" data-fancybox>
+                                    <img src="images/the-scientist/016_scientist_and_a_sunset.png">
+                                </a>
+                                <figcaption>016. The Scientist and a sunset</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/017_scientist_and_a_cloud.jpg" data-fancybox>
+                                    <img src="images/the-scientist/017_scientist_and_a_cloud.jpg">
+                                </a>
+                                <figcaption>017. The Scientist and a cloud</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/018_scientist_and_a_magic_box.jpg" data-fancybox>
+                                    <img src="images/the-scientist/018_scientist_and_a_magic_box.jpg">
+                                </a>
+                                <figcaption>018. The Scientist and a magic box</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/019_scientist_and_a_black_hole.jpg" data-fancybox>
+                                    <img src="images/the-scientist/019_scientist_and_a_black_hole.jpg">
+                                </a>
+                                <figcaption>019. The Scientist and a black hole</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/020_scientist_and_a_nail.jpg" data-fancybox>
+                                    <img src="images/the-scientist/020_scientist_and_a_nail.jpg">
+                                </a>
+                                <figcaption>020. The Scientist and a nail</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/021_scientist_and_a_night_club.jpg" data-fancybox>
+                                    <img src="images/the-scientist/021_scientist_and_a_night_club.jpg">
+                                </a>
+                                <figcaption>020. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/021_scientist_and_a_night_club.jpg" data-fancybox>
+                                    <img src="images/the-scientist/021_scientist_and_a_night_club.jpg">
+                                </a>
+                                <figcaption>021. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/022_scientist_and_a_car.jpg" data-fancybox>
+                                    <img src="images/the-scientist/022_scientist_and_a_car.jpg">
+                                </a>
+                                <figcaption>022. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/023_scientist_and_a_diamond.jpg" data-fancybox>
+                                    <img src="images/the-scientist/023_scientist_and_a_diamond.jpg">
+                                </a>
+                                <figcaption>023. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/024_scientist_and_a_ruler.jpg" data-fancybox>
+                                    <img src="images/the-scientist/024_scientist_and_a_ruler.jpg">
+                                </a>
+                                <figcaption>024. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/025_scientist_and_broccoli.jpg" data-fancybox>
+                                    <img src="images/the-scientist/025_scientist_and_broccoli.jpg">
+                                </a>
+                                <figcaption>025. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/026_scientist_and_horoscopes.jpg" data-fancybox>
+                                    <img src="images/the-scientist/026_scientist_and_horoscopes.jpg">
+                                </a>
+                                <figcaption>026. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/027_scientist_and_a_cupcake.jpg" data-fancybox>
+                                    <img src="images/the-scientist/027_scientist_and_a_cupcake.jpg">
+                                </a>
+                                <figcaption>027. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/028_scientist_and_an_alien.jpg" data-fancybox>
+                                    <img src="images/the-scientist/028_scientist_and_an_alien.jpg">
+                                </a>
+                                <figcaption>028. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/029_scientist_and_art.jpg" data-fancybox>
+                                    <img src="images/the-scientist/029_scientist_and_art.jpg">
+                                </a>
+                                <figcaption>029. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/030_scientist_and_a_fish.jpg" data-fancybox>
+                                    <img src="images/the-scientist/030_scientist_and_a_fish.jpg">
+                                </a>
+                                <figcaption>030. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/031_scientist_and_a_skyscraper.jpg" data-fancybox>
+                                    <img src="images/the-scientist/031_scientist_and_a_skyscraper.jpg">
+                                </a>
+                                <figcaption>031. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/032_scientist_and_a_campfire.jpg" data-fancybox>
+                                    <img src="images/the-scientist/032_scientist_and_a_campfire.jpg">
+                                </a>
+                                <figcaption>032. The Scientist and a night club</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/033_scientist_and_a_balloon.jpg" data-fancybox>
+                                    <img src="images/the-scientist/033_scientist_and_a_balloon.jpg">
+                                </a>
+                                <figcaption>033. The Scientist and a balloon</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/034_scientist_and_the_sea.jpg" data-fancybox>
+                                    <img src="images/the-scientist/034_scientist_and_the_sea.jpg">
+                                </a>
+                                <figcaption>034. The Scientist and the sea</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/035_scientist_and_a_pizza.jpg" data-fancybox>
+                                    <img src="images/the-scientist/035_scientist_and_a_pizza.jpg">
+                                </a>
+                                <figcaption>035. The Scientist and a pizza</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/036_scientist_and_a_ladder.jpg" data-fancybox>
+                                    <img src="images/the-scientist/036_scientist_and_a_ladder.jpg">
+                                </a>
+                                <figcaption>036. The Scientist and a ladder</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/037_scientist_and_friday.jpg" data-fancybox>
+                                    <img src="images/the-scientist/037_scientist_and_friday.jpg">
+                                </a>
+                                <figcaption>037. The Scientist and a Friday</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/038_scientist_and_a_robot.jpg" data-fancybox>
+                                    <img src="images/the-scientist/038_scientist_and_a_robot.jpg">
+                                </a>
+                                <figcaption>038. The Scientist and a robot</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/039_scientist_and_the_universe.jpg" data-fancybox>
+                                    <img src="images/the-scientist/039_scientist_and_the_universe.jpg">
+                                </a>
+                                <figcaption>039. The Scientist and the universe</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/040_scientist_and_the_laws.jpg" data-fancybox>
+                                    <img src="images/the-scientist/040_scientist_and_the_laws.jpg">
+                                </a>
+                                <figcaption>040. The Scientist and the laws</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/the-scientist/041_scientist_and_a_mushroom.jpg" data-fancybox>
+                                    <img src="images/the-scientist/041_scientist_and_a_mushroom.jpg">
+                                </a>
+                                <figcaption>041. The Scientist and a mushroom</figcaption>
+                            </figure>
+
+                        </article>
+                    </section>
+                </main>
+                <footer>
+                    <h3>To be continued</h3>
+                </footer>
+            </div>
+</body>
+
+</html>
+</div>
+</div>
+<script>
+    function showMenu() {
+        document.getElementById("overlay").style.display = "flex";
+        document.getElementById("menu_close").style.display = "block";
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("hide").style.display = "none";
+    }
+
+    function closeMenu() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("menu_close").style.display = "none";
+        document.getElementById("menu").style.display = "initial";
+        document.getElementById("hide").style.display = "initial";
+    }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28473723-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+
+    gtag('config', 'UA-28473723-1');
+</script>
+</body>
+
+</html>
