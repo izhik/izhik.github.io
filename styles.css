@@ -428,20 +428,12 @@ img.icon {
 	width: 1rem;
 	height: 1rem;
 }
-.case-study{
-	margin-bottom: 3rem;
-	border: 2px solid black;
-	
-	}
+
 .featured {
-	color: #FFF;
+
 	border-radius: 0.5rem;
 	padding: 2rem;
-	background: linear-gradient(to top right, #8CE5E7 , #4B2AAA);
-}
-.grid-case-study{
-	display: grid;
-	columns: (1fr, 1fr);
+	background: #EBF4F9;
 }
 
 ul {
