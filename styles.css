@@ -24,6 +24,7 @@ body {
 hr {
 	border: 0;
 	border-top: 1px solid #d5dadf;
+	margin: 4rem 0;
 }
 
 /* fonts start */
@@ -221,10 +222,11 @@ main {
 }
 
 blockquote {
-	margin-bottom: 4rem;
+	margin: 2rem 1rem 0;
 	line-height: 1.25;
-	padding-left: 2rem;
-	border-left: 0.25rem solid #d5dadf;
+	padding: 1rem 2rem;
+	font-style: italic;
+	border-left: 4px solid #c9d4de;
 }
 
 #fullHeight {
@@ -258,7 +260,7 @@ article#works section {
 }
 
 article#works section:hover {
-	border: solid 2px #7C6FD8;
+	border: solid 2px #7c6fd8;
 	cursor: pointer;
 }
 
@@ -288,7 +290,7 @@ article.projects section {
 }
 
 article.projects section:hover {
-	border: solid 2px #7C6FD8;
+	border: solid 2px #7c6fd8;
 	cursor: pointer;
 }
 
@@ -341,8 +343,8 @@ div.hero {
 
 div.hero img {
 	width: 360px;
-    height: 280px;
-    object-fit: cover;
+	height: 280px;
+	object-fit: cover;
 	border-radius: 0.75rem;
 	align-self: flex-start;
 	margin-top: -1.5rem;
@@ -529,10 +531,17 @@ figure a:focus {
 figcaption {
 	margin-top: 1rem;
 	font-size: 0.875rem;
+	display: block;
+	line-height: 1.5;
+
 }
 
 figure {
 	text-align: center;
+}
+
+.m-size{
+	width: 600px;
 }
 
 .fancybox-custom .fancybox-button {
@@ -783,6 +792,13 @@ figure {
 		width: 300px;
 		height: 300px;
 	}
+	.grid-two{
+		grid-template-columns: 1fr, 1fr;
+	}
+	.grid-two img {
+		width: 100%;
+		height: auto;
+	}
 
 	article figure img {
 		object-fit: cover;
@@ -797,7 +813,7 @@ figure {
 	}
 
 	.grid a:hover img {
-		border: solid 2px #7C6FD8;
+		border: solid 2px #7c6fd8;
 	}
 
 	figure img:focus,
@@ -821,7 +837,7 @@ h1 s {
 }
 
 s {
-	opacity: 0.3;
+	color: #c9d4de;
 }
 .icon-bg {
 	display: inline-flex;
@@ -830,7 +846,7 @@ s {
 	width: 2rem;
 	height: 2rem;
 	border-radius: 2rem;
-	color: #6D75C1;
+	color: #6d75c1;
 }
 .icon-bg svg {
 	width: 1.5rem;
@@ -840,4 +856,7 @@ s {
 	width: 240px;
 	height: 600px;
 	overflow-x: auto;
+}
+ul {
+	margin-left: 2rem;
 }
