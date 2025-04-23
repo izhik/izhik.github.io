@@ -38,6 +38,14 @@ hr {
 p {
 	margin-bottom: 1.25rem;
 }
+p.sidenote {
+	display: flex;
+	align-items: center;
+	border: 1px solid #d3dff3;
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	margin: 4rem 0;
+}
 
 p.tiny {
 	font-size: 1rem;
@@ -504,10 +512,6 @@ img.icon {
 	border-radius: 0.5rem;
 }
 
-ul {
-	margin: 0 1rem 1rem;
-}
-
 a.pdf {
 	margin-bottom: 2rem;
 	text-decoration: underline;
@@ -650,7 +654,7 @@ figure {
 		flex-direction: column;
 		align-items: flex-start;
 	}
-	#wrapper .head-flex h1{
+	#wrapper .head-flex h1 {
 		margin-bottom: 1rem;
 	}
 	ul#nav_menu {
@@ -877,6 +881,10 @@ s {
 	height: 600px;
 	overflow-x: auto;
 }
+
 ul {
-	margin-left: 2rem;
+	margin: 0 0 2rem 2rem;
+}
+p + ul {
+	margin-top: -1rem;
 }
