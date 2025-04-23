@@ -539,18 +539,21 @@ section#illo {
 	grid-row-gap: 2rem;
 	margin-top: 4rem;
 }
-
+figure {
+	text-align: center;
+}
 figure img {
 	width: 100%;
 	vertical-align: top;
 	box-shadow: 0 1rem 2rem #d3dff3;
 	background-color: transparent !important;
-	outline: none;
+	border-radius: 0.5rem;
+	
 }
 
 figure img:focus,
 figure a:focus {
-	outline: none;
+	
 }
 
 figcaption {
@@ -558,10 +561,6 @@ figcaption {
 	font-size: 0.875rem;
 	display: block;
 	line-height: 1.5;
-}
-
-figure {
-	text-align: center;
 }
 
 .m-size {
@@ -877,8 +876,8 @@ s {
 	height: 1.5rem;
 }
 .emulate-mobile {
-	width: 240px;
-	height: 600px;
+	width: 320px;
+	height: 800px;
 	overflow-x: auto;
 }
 
