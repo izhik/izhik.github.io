@@ -16,10 +16,18 @@ body {
 
 #wrapper {
 	width: 90%;
-	margin: 3rem auto 10rem auto;
+	margin: 4rem auto;
 	max-width: 1140px;
 	position: relative;
 }
+#wrapper .head-flex {
+	align-items: center;
+	margin-bottom: 2rem;
+}
+#wrapper .head-flex h1 {
+	margin-bottom: 0;
+}
+
 
 hr {
 	border: 0;
@@ -44,7 +52,6 @@ p.tiny {
 	padding: 0.25rem 0.75rem;
 	font-weight: 400;
 	font-size: 1rem;
-	opacity: 0.8;
 	width: fit-content;
 }
 
@@ -157,12 +164,12 @@ ul#sub-nav-menu a {
 }
 
 ul#sub-nav-menu a:hover {
-	border-bottom: 0.125rem solid #33373e;
+	border-bottom: 0.125rem solid #c9d4de;
 	transition: all 0.2s ease-in-out;
 }
 
 ul#sub-nav-menu a.active {
-	border-bottom: 0.125rem solid #262626;
+	border-bottom: 0.125rem solid #7c6fd8;
 }
 
 ul#nav_menu {
@@ -218,7 +225,7 @@ div.read-article:hover {
 }
 
 main {
-	margin: 7rem 0 7rem 0;
+	margin: 6rem 0;
 }
 
 blockquote {
@@ -277,9 +284,8 @@ article#works img {
 article.projects {
 	margin-top: 3rem;
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 1fr 1fr;
 	gap: 2rem;
-	margin-bottom: 7rem;
 }
 
 article.projects section {
@@ -296,7 +302,22 @@ article.projects section:hover {
 
 article.projects section a {
 	width: 100%;
+	text-decoration: none;
 }
+.case-study:after {
+	content: "Case study";
+	position: relative;
+	top: -2px;
+	background: #fae0b2;
+	color: #76572d;
+	margin-left: 0.5rem;
+	border-radius: 0.25rem;
+	padding: 0.25rem 0.75rem;
+	font-weight: 400;
+	font-size: 0.875rem;
+	width: fit-content;
+}
+
 
 article.projects img {
 	width: 100%;
@@ -533,14 +554,13 @@ figcaption {
 	font-size: 0.875rem;
 	display: block;
 	line-height: 1.5;
-
 }
 
 figure {
 	text-align: center;
 }
 
-.m-size{
+.m-size {
 	width: 600px;
 }
 
@@ -584,7 +604,9 @@ figure {
 		margin-top: 2rem;
 		margin-bottom: 8rem;
 	}
-
+	article.projects {
+		gap: 1rem;
+	}
 	div#align_right div {
 		position: static;
 	}
@@ -601,23 +623,15 @@ figure {
 	ul#overlay li {
 		font-size: 1.25em;
 	}
-
-	ul#sub-nav-menu {
-		display: none;
-	}
 }
 
 @media only screen and (max-width: 767px) {
-	div#wrapper {
-		width: 80%;
-	}
-
 	nav {
 		width: auto;
 	}
 
 	main {
-		margin: 4rem 0 4rem 0;
+		margin: 0;
 	}
 
 	div#overf {
@@ -626,11 +640,6 @@ figure {
 		position: relative;
 		/*for desk*/
 		min-width: 320px;
-	}
-
-	.head-flex {
-		margin: 0;
-		flex-direction: row;
 	}
 
 	div#wrapper {
@@ -765,6 +774,9 @@ figure {
 	ul#overlay {
 		display: none !important;
 	}
+	div#wrapper {
+		width: 90%;
+	}
 
 	div#head-flex {
 		display: flex !important;
@@ -778,7 +790,9 @@ figure {
 		background-color: #262626;
 		color: white;
 	}
-
+main{
+	margin: 4rem 0;
+}
 	article.grid {
 		display: grid;
 		grid-column-gap: 2rem;
@@ -792,7 +806,7 @@ figure {
 		width: 300px;
 		height: 300px;
 	}
-	.grid-two{
+	.grid-two {
 		grid-template-columns: 1fr, 1fr;
 	}
 	.grid-two img {
