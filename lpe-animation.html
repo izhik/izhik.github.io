@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="robots" content="noimageindex">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <title>Animation in Litmus Personalize - Igor Izhik</title>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,600|Libre+Franklin:600" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon/favicon-16x16.png"
+        >
+        <link rel="manifest" href="/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5S9D5LZ');
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5S9D5LZ');
+        </script>
+        <!-- End Google Tag Manager -->
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-5S9D5LZ"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"
+            ></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div id="overf">
+            <header class="head-flex marg-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/izhik-logo.svg" alt="izhik-logo">
+                        <span>Igor Izhik</span>
+                    </a>
+                </div>
+                <nav>
+                    <ul id="nav_menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                    <button type="button" id="menu" onclick="showMenu()">MENU</button>
+                    <button type="button" id="menu_close" onclick="closeMenu()">
+                        <img src="images/icn_close.svg" alt="close">
+                    </button>
+                    <ul id="overlay">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="animations.html">Animations</a>
+                        </li>
+                        <li>
+                            <a href="illustrations.html">Illustrations</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="wrapper">
+                <div id="hide">
+                    <main>
+                        <div class="overall marg_left">
+                            <h1>Animation in Litmus Personalize</h1>
+                        </div>
+                        <section>
+                            <p>For the needs of the team I've created, published and maintained a <a href="https://www.figma.com/community/file/1034872218832364318/lofi-sketching-ui-kit" target="_blank">sketching UI kit on Figms community</a></p>
+                        </section>
+                        <hr>
+                        <figure>
+                            <img src="images/modular-building/mb-drag-and-drop.png" alt="Modular building">
+                        </figure>
+                        <hr>
+                        <section>
+                            <h2>Problem</h2>
+                            <p>Creating emails in Litmus was inefficient for non-technical users. While developers could build reusable modules, there was no streamlined way to use them in Visual Editor. Teams had to memorize module names and manually insert HTML, leading to errors, inefficiencies, and poor adoption of existing tools.</p>
+                            <hr>
+                            <h2>Users & Research Insights</h2>
+                            <p>Through Continuous Discovery interviews, we learned that:</p>
+                            <ul>
+                                <li>Non-technical users struggled with HTML-based workflows.</li>
+                                <li>Email developers wanted faster content edits without breaking layouts.</li>
+                                <li>Customers were frustrated with ESP builders and sought better alternatives.</li>
+                            </ul>
+                            <blockquote>
+                                I want to enable non-technical people at my company to build their emails from templates and modules I control.
+                            </blockquote>
+                            <hr>
+                            <h2>Team & Collaboration</h2>
+                            <ul>
+                                <li>Product Manager: planning, strategy, and stakeholder communication</li>
+                                <li>3 Engineers: tech spikes, feasibility, implementation</li>
+                                <li>Design Director: design quality oversight</li>
+                                <li>UX Researcher: recruitment, testing facilitation</li>
+                                <li>Director of Engineering: dependency management, quality assurance</li>
+                            </ul>
+                            <hr>
+                            <h2>My Role</h2>
+                            <ul>
+                                <li>Defined the MVP and future vision</li>
+                                <li>Led research, ideation, prototyping, and usability testing</li>
+                                <li>Created high-fidelity mockups and flows</li>
+                                <li>Maintained alignment with design system and engineers</li>
+                                <li>Provided ongoing implementation support and documentation</li>
+                            </ul>
+                            <hr>
+                            <h2>Process</h2>
+                            <ul>
+                                <li>UX research, competitive analysis, and ideation sessions</li>
+                                <li>User journey mapping and interaction prototyping</li>
+                                <li>Usability testing for "Drag & Drop" and "Organizing Modules" features</li>
+                                <li>Iterative development with design system integration</li>
+                            </ul>
+                        </section>
+                        <hr>
+                        <section>
+                            <h2>Selected design artifacts from the process</h2>
+                            <p>Competitive analysis and inspiration board</p>
+                            <figure>
+                                <img src="images/modular-building/mb-inspiration.png">
+                            </figure>
+                            <hr>
+                            <p>Ideation session with engineers and marketing</p>
+                            <figure class="m-size">
+                                <img src="images/modular-building/mb-ideation.png">
+                            </figure>
+                            <hr>
+                            <p>Initial flowchart of functionality</p>
+                            <p>
+                                <figure>
+                                    <img src="images/modular-building/mb-functionality.png">
+                                </figure>
+                            </p>
+                            <hr>
+                            <p>Layout and interaction explorations</p>
+                            <p>
+                                <figure>
+                                    <img src="images/modular-building/mb-interaction-areas.png">
+                                </figure>
+                            </p>
+                            <hr>
+                            <p>Persona and user role impact study</p>
+                            <p>
+                                <figure>
+                                    <img src="images/modular-building/mb-user-roles.png">
+                                </figure>
+                            </p>
+                        </section>
+                        <hr>
+                        <p>Modal window explorations</p>
+                        <p>
+                            <figure>
+                                <img src="images/modular-building/mb-modal.png">
+                            </figure>
+                        </p>
+                    </section>
+                    <hr>
+                    <h2>Timeline & Rollout</h2>
+                    <ul>
+                        <li>Developed iteratively over two quarters</li>
+                        <li>Quarterly releases gave Marketing time to plan promotions, create materials, and train Sales and Support</li>
+                        <li>Built in a staging environment with features behind beta flags</li>
+                        <li>Phased rollout: from beta users to full customer base</li>
+                    </ul>
+                    <hr>
+                    <h2>Key Design Decisions</h2>
+                    <ul>
+                        <li>
+                            <strong>Categories:</strong>
+                            Better than folders (too rigid) and tags (too loose)
+                        </li>
+                        <li>
+                            <strong>Insert Panel:</strong>
+                            Unified module/image insertion in Code Editor
+                        </li>
+                        <li>
+                            <strong>Tabs in Visual Editor:</strong>
+                            Accepted divergence for better context-fit
+                        </li>
+                        <li>
+                            <strong>Role-based access:</strong>
+                            Simplified experience for non-developers
+                        </li>
+                    </ul>
+                    <figure class="m-size">
+                        <img src="images/modular-building/mb-decisions.png">
+                    </figure>
+                    <hr>
+                    <h2>Cross-functional Collaboration</h2>
+                    <ul>
+                        <li>Clear 1:1s and design reviews with PMs and design leadership</li>
+                        <li>Design sessions with engineers and UX team</li>
+                        <li>Async collaboration via Figma, Slack, Confluence, Jira</li>
+                        <li>Shared demos and mid-sprint reviews with stakeholders</li>
+                    </ul>
+                    <hr>
+                    <section>
+                        <p>Typical quick feedback request in Slack:</p>
+                        <figure class="m-size">
+                            <img src="images/modular-building/mb-feedback.png">
+                        </figure>
+                    </section>
+                    <hr>
+                    <h2>UI Explorations</h2>
+                    <p>Design options for organizing modules: tags, folders, categories.</p>
+                    <p>
+                        <figure>
+                            <img src="images/modular-building/mb-design-options.png">
+                        </figure>
+                    </p>
+                    <hr>
+                    <p>An exploration of the ways to present information: flyout menu vs tabs.</p>
+                    <p>
+                        <figure>
+                            <img src="images/modular-building/mb-flyout.png">
+                        </figure>
+                    </p>
+                    <hr>
+                    <p>Design Library overview page</p>
+                    <p>
+                        <figure>
+                            <img src="images/modular-building/mb-design-library-overview.png">
+                        </figure>
+                    </p>
+                    <hr>
+                    <p>Design Library index page</p>
+                    <p>
+                        <figure>
+                            <img src="images/modular-building/mb-design-library.png">
+                        </figure>
+                    </p>
+                    <hr>
+                    <h2>What helped ensure successful delivery</h2>
+                    <ul>
+                        <li>Clear goals and user understanding</li>
+                        <li>Shared, accessible documentation</li>
+                        <li>Continuous feedback and open collaboration</li>
+                        <li>Transparent communication and early sharing</li>
+                        <li>Time buffers for iteration and bug fixing</li>
+                        <li>Design system alignment and implementation support</li>
+                    </ul>
+                    <hr>
+                    <h2>Traps and wrong-turns</h2>
+                    <ul>
+                        <li>Over-reliance on high-fidelity mocks early on</li>
+                        <li>Modules still not fully integrated into all views</li>
+                        <li>Navigation update delays due to marketing alignment</li>
+                        <li>UI scalability issues emerged with new features (e.g. merge tags)</li>
+                        <li>“Manage Modules” shortcut left out due to time constraints</li>
+                        <li>"Uncategorized" section missed during testing but added later</li>
+                    </ul>
+                    <hr>
+                    <h2>Lessons learned</h2>
+                    <ul>
+                        <li>Usability testing is critical—and must be done early</li>
+                        <li>Low-fidelity prototypes are essential for communicating scope</li>
+                        <li>Delightful details like "Drop here" boost confidence</li>
+                        <li>Don’t ship what’s easier—ship what’s right</li>
+                        <li>Cross-team coordination is key to a unified experience</li>
+                    </ul>
+                    <hr>
+                    <h2>Results</h2>
+                    <ul>
+                        <li>The project showed strong metrics, but educating users on the value of modular building remains a key challenge.</li>
+                        <li>A major adoption barrier is persistent distrust of WYSIWYG editors, linked to past experiences with poor code quality.</li>
+                        <li>
+                            Success is reflected across three key dimensions:
+                            <ul>
+                                <li>Quantitative metrics and usage data</li>
+                                <li>Impact on closing deals and creating new opportunities</li>
+                                <li>Direct feedback from customers</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <article class="grid">
+                        <figure>
+                            <a href="images/modular-building/mb-numbers-1.png" data-fancybox>
+                                <img src="images/modular-building/mb-numbers-1.png">
+                            </a>
+                            <figcaption>Monthly active users</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/modular-building/mb-numbers-2.png" data-fancybox>
+                                <img src="images/modular-building/mb-numbers-2.png">
+                            </a>
+                            <figcaption>Usage</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/modular-building/mb-numbers-3.png" data-fancybox>
+                                <img src="images/modular-building/mb-numbers-3.png">
+                            </a>
+                            <figcaption>Category creation</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/modular-building/mb-feedback-customer.png" data-fancybox>
+                                <img src="images/modular-building/mb-feedback-customer.png">
+                            </a>
+                            <figcaption>Customer feedback</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/modular-building/mb-feedback-customer-2.png" data-fancybox>
+                                <img src="images/modular-building/mb-feedback-customer-2.png">
+                            </a>
+                            <figcaption>Customer feedback</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/modular-building/mb-sales.png" data-fancybox>
+                                <img src="images/modular-building/mb-sales.png">
+                            </a>
+                            <figcaption>Closed deals</figcaption>
+                        </figure>
+                    </article>
+                </main>
+                <footer>
+                    <a href="portfolio.html" class="icon-bg"><i data-feather="arrow-left"></i> Back to Portfolio</a>
+                </footer>
+            </div>
+        </body>
+    </html>
+</div>
+</div>
+<script>function showMenu() {
+        document.getElementById("overlay").style.display = "flex";
+        document.getElementById("menu_close").style.display = "block";
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("hide").style.display = "none";
+    }
+
+    function closeMenu() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("menu_close").style.display = "none";
+        document.getElementById("menu").style.display = "initial";
+        document.getElementById("hide").style.display = "initial";
+    }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28473723-1"></script>
+<script>window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+
+    gtag('config', 'UA-28473723-1');
+</script>
+<!-- Feather icons -->
+<script>
+                feather.replace();
+</script>
+</body>
+</html>
