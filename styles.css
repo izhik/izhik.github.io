@@ -863,17 +863,19 @@ s {
 	color: #c9d4de;
 }
 .icon-bg {
-	display: inline-flex;
+	display: flex;
+	flex-direction: row;;
 	align-items: center;
-	justify-content: flex-start;
-	width: 2rem;
-	height: 2rem;
+
 	border-radius: 2rem;
-	color: #6d75c1;
+
 }
 .icon-bg svg {
 	width: 1.5rem;
 	height: 1.5rem;
+}
+.icon-bg svg {
+	color: #6d75c1;
 }
 .emulate-mobile {
 	width: 320px;

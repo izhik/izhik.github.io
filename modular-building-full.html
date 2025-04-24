@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="robots" content="noimageindex">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <title>Project: Modular Building in Litmus - Igor Izhik</title>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,600|Libre+Franklin:600" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon/favicon-16x16.png"
+        >
+        <link rel="manifest" href="/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5S9D5LZ');
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5S9D5LZ');
+        </script>
+        <!-- End Google Tag Manager -->
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-5S9D5LZ"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"
+            ></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div id="overf">
+            <header class="head-flex marg-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/izhik-logo.svg" alt="izhik-logo">
+                        <span>Igor Izhik</span>
+                    </a>
+                </div>
+                <nav>
+                    <ul id="nav_menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                    <button type="button" id="menu" onclick="showMenu()">MENU</button>
+                    <button type="button" id="menu_close" onclick="closeMenu()">
+                        <img src="images/icn_close.svg" alt="close">
+                    </button>
+                    <ul id="overlay">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="animations.html">Animations</a>
+                        </li>
+                        <li>
+                            <a href="illustrations.html">Illustrations</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="wrapper">
+                <div id="hide">
+                    <main>
+                        <div class="overall marg_left">
+                            <h1>Modular email building</h1>
+                        </div>
+                        <section>
+                            <h3>Background</h3>
+                            <p>
+                                Litmus is an email marketing platform that offers a robust toolset to help customers build emails (via Code Editor or Visual Editor), test them across a wide range of email clients, review them with stakeholders, and improve their email programs by analyzing performance.
+                            </p>
+                            <p>
+                                The project I’m describing here was one of several running in parallel. For instance, other teams were working on a navigation redesign that directly impacted the adoption and discoverability of Modular Building.
+                            </p>
+                        </section>
+                        <hr>
+                        <figure>
+                            <img src="images/modular-building/mb-drag-and-drop.png" alt="Modular building">
+                        </figure>
+                        <hr>
+                        <section>
+                            <h3>The problem</h3>
+                            <p>Litmus aims to scale customers' email production by enabling non-technical users to easily build emails using predefined modules, eliminating the need for HTML knowledge. Increased usage and collaboration drive customer retention, growth, and profitability.</p>
+                            <p>Previously, customers struggled with inefficient workflows—switching between product areas and memorizing module names. The Visual Editor lacked pre-built module support entirely. Dissatisfaction with Email Service Providers' (ESPs) tools drove demand for better modular solutions, evident from competitors like Stensul and Dyspatch.</p>
+                            <p>Market research indicated modular building could boost deal sizes and frequency (up to 15% growth), provide a competitive advantage, and unlock new features like personalization. Targeting non-technical content editors, the team integrated the Design Library and Editors, streamlining user workflows.</p>
+                        </section>
+                        <hr>
+                        <section>
+                            <h3>Quotes from customers</h3>
+                            <p>
+                                <blockquote>
+                                    "I want to enable non-technical people at my company to build emails using templates and modules I control."
+                                </blockquote>
+                                <blockquote>"If we had this, we could build emails much faster."</blockquote>
+                                <blockquote>"I want new team members to get up to speed quickly. I want to drag and drop modules."</blockquote>
+                                <blockquote>"We’re duplicating efforts—our creatives design full layouts in Figma, and then everything gets redone. A drag-and-drop editor where I can select modules and pass them to creatives would help."</blockquote>
+                            </p>
+                            <p class="sidenote">
+                                Litmus uses Continuous Discovery in UX research, conducting weekly customer interviews to understand user experiences, goals, and pain points. This ongoing practice helps identify improvements, discover new product opportunities, and deepen our understanding of user needs.
+                            </p>
+                        </section>
+                        <section>
+                            <h3>The team</h3>
+                            <ul>
+                                <li>
+                                    <strong>Product Manager:</strong>
+                                    Project delivery and cross-team communication (Sales, Marketing, Executive).
+                                </li>
+                                <li>
+                                    <strong>Software Engineers (3):</strong>
+                                    Technical spikes, feasibility, proofs of concept, tech stack.
+                                </li>
+                                <li>
+                                    <strong>UX Researcher:</strong>
+                                    Participant recruitment, interview best practices (shared across teams).
+                                </li>
+                                <li>
+                                    <strong>Design Director:</strong>
+                                    Design direction, UX quality.
+                                </li>
+                                <li>
+                                    <strong>Director of Software Engineering:</strong>
+                                    Engineering coordination, dependency management, code quality.
+                                </li>
+                            </ul>
+                        </section>
+                        <hr>
+                        <section>
+                            <h3>My contributions</h3>
+                            <ul>
+                                <li>Collaborated with Product Manager on project planning, testing, and delivery.</li>
+                                <li>Led user testing, documented findings, and planned usability improvements.</li>
+                                <li>Defined MVP and future vision by exploring problems and evaluating solutions.</li>
+                                <li>Led UX and visual design research and execution.</li>
+                                <li>Facilitated design workshops (ideation, card sorting).</li>
+                                <li>Created high-fidelity mockups and prototypes to clarify interactions and workflows.</li>
+                                <li>Collaborated closely with designers, shared progress, and solicited feedback.</li>
+                                <li>Ensured UI consistency by aligning with UX engineers and the design system.</li>
+                                <li>Communicated design rationale clearly to teams and stakeholders.</li>
+                                <li>Partnered with engineers to maintain alignment between design and implementation.</li>
+                                <li>Coordinated A/B and split testing strategies with Marketing.</li>
+                                <li>Analyzed performance metrics and recommended enhancements.</li>
+                                <li>Educated engineers on design best practices and design system usage.</li>
+                            </ul>
+                        </section>
+                        <hr>
+                        <section>
+                            <h3>The plan</h3>
+                            <p>A one-pager summarizing the problem, evidence, and user needs aligned teams on the problem and clarified the "why."</p>
+                            <p>
+                                <strong>The design plan:</strong>
+                            </p>
+                            <ul>
+                                <li>UX research</li>
+                                <li>Competitive analysis and inspiration</li>
+                                <li>Ideation sessions with scrum team (engineering, marketing, design)</li>
+                                <li>Solution exploration and user journey mapping</li>
+                                <li>Interaction prototyping</li>
+                                <li>Assumption testing via user interviews</li>
+                                <li>Usability testing ("Organizing Modules," "Drag and Drop")</li>
+                                <li>High-fidelity mockups</li>
+                                <li>Overseeing engineering implementation</li>
+                            </ul>
+                            <p>
+                                <strong>Design success criteria:</strong>
+                            </p>
+                            <ul>
+                                <li>Intuitive, easy-to-use modular email building</li>
+                                <li>Positive customer feedback</li>
+                                <li>Satisfied design and scrum teams; timely delivery and support</li>
+                                <li>Scalable for future capabilities</li>
+                                <li>Best practices in place (edge cases, empty states, loaders, etc.)</li>
+                                <li>High quality with stable performance and low bug count</li>
+                                <li>Design system compliance</li>
+                                <li>Measurable business impact</li>
+                            </ul>
+                            <p>
+                                <strong>Desired business outcomes:</strong>
+                            </p>
+                            <ul>
+                                <li>More active accounts using the Visual Editor</li>
+                                <li>Growth in active Visual Editor users</li>
+                                <li>Higher engagement (pageviews, clicks, saves)</li>
+                                <li>Increase in Design Library modules created and updated</li>
+                            </ul>
+                            <p>Improved retention and upgrades to higher-tier plans were also desirable secondary outcomes.</p>
+                        </section>
+                        <hr>
+                        <section>
+                            <h3>Selected design artifacts from the process</h3>
+                            <p>Competitive analysis and inspiration board</p>
+                            <figure>
+                                <img src="images/modular-building/mb-inspiration.png">
+                            </figure>
+                            <hr>
+                            <p>Ideation session with engineers and marketing</p>
+                            <figure class="m-size">
+                                <img src="images/modular-building/mb-ideation.png">
+                            </figure>
+                            <hr>
+                            <p>Initial flowchart of functionality</p>
+                            <p>
+                                <figure>
+                                    <img src="images/modular-building/mb-functionality.png">
+                                </figure>
+                            </p>
+                            <hr>
+                            <p>Layout and interaction explorations</p>
+                            <p>
+                                <figure>
+                                    <img src="images/modular-building/mb-interaction-areas.png">
+                                </figure>
+                            </p>
+                            <hr>
+                            <p>Persona and user role impact study</p>
+                            <p>
+                                <figure>
+                                    <img src="images/modular-building/mb-user-roles.png">
+                                </figure>
+                            </p>
+                        </section>
+                        <hr>
+                        <p>Modal window explorations</p>
+                        <p>
+                            <figure>
+                                <img src="images/modular-building/mb-modal.png">
+                            </figure>
+                        </p>
+                    </section>
+                    <hr>
+                    <section>
+                        <p>
+                            <strong>Timeline and delivery:</strong>
+                        </p>
+                        <ul>
+                            <li>Developed iteratively over two quarters</li>
+                            <li>Quarterly releases gave Marketing time to plan promotions, create materials, and train Sales and Support</li>
+                            <li>Built in a staging environment with features behind beta flags</li>
+                            <li>Phased rollout: from beta users to full customer base</li>
+                        </ul>
+                        <p>
+                            <strong>Key design decisions:</strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Categories for organizing modules:</strong>
+                                Chosen over tags (too loose) and folders (too rigid and non-flexible).
+                            </li>
+                            <li>
+                                <strong>Insert Panel in Code Editor:</strong>
+                                Unified access point for modules and images.
+                            </li>
+                            <li>
+                                <strong>Tabs in Visual Editor:</strong>
+                                Used instead of modals or panels; divergence from Code Editor was acceptable due to different UI needs.
+                            </li>
+                            <li>
+                                <strong>New user roles:</strong>
+                                Limited access to the Design Library for non-developer roles.
+                            </li>
+                        </ul>
+                        <p>
+                            <strong>Additional UX considerations:</strong>
+                        </p>
+                        <ul>
+                            <li>Handling too many or too few modules in the panel</li>
+                            <li>Search behavior and filtering</li>
+                            <li>Panel width constraints (min/max)</li>
+                            <li>Managing long or missing descriptions</li>
+                            <li>Need for drag-and-drop signifiers</li>
+                            <li>Sticky category headers</li>
+                            <li>Inclusion of "Uncategorized" section</li>
+                            <li>Loading state behavior</li>
+                            <li>Module display sizing and grid layout</li>
+                        </ul>
+                        <p>A document was created to capture key design decisions and trade-offs, helping the team and stakeholders understand the reasoning behind drag-and-drop experience choices.</p>
+                        <figure class="m-size">
+                            <img src="images/modular-building/mb-decisions.png">
+                        </figure>
+                        <hr>
+                        <section>
+                            <h3>Cross-functional collaboration</h3>
+                            <p>Every project at Litmus is cross-functional by default, with the scrum team operating autonomously and supported by structured, recurring collaboration touchpoints:</p>
+                            <ul>
+                                <li>
+                                    <strong>Weekly 1:1s with PM:</strong>
+                                    Design direction, planning, core functionality, future vision, and testing.
+                                </li>
+                                <li>
+                                    <strong>Twice-weekly design sessions:</strong>
+                                    Design Director, marketing/design peers, UX researcher, and UX engineer.
+                                </li>
+                                <li>
+                                    <strong>Weekly Design Reviews:</strong>
+                                    Directors of Design and Product Management, and PM.
+                                </li>
+                                <li>
+                                    <strong>Confluence & Slack:</strong>
+                                    Shared updates, documentation, and feedback requests across teams.
+                                </li>
+                                <li>
+                                    <strong>Bi-weekly demos:</strong>
+                                    Full team visibility and feedback (incl. VP of Product and Engineering).
+                                </li>
+                                <li>
+                                    <strong>Mid-sprint reviews & retrospectives:</strong>
+                                    Team alignment, blocker resolution, and continuous improvement.
+                                </li>
+                                <li>
+                                    <strong>Weekly design system sessions:</strong>
+                                    Discussed use and evolution of components.
+                                </li>
+                                <li>
+                                    <strong>Weekly Product Huddles:</strong>
+                                    Reviewed new research-driven initiatives and tracked progress.
+                                </li>
+                            </ul>
+                            <p>Async collaboration also played a major role—via Figma, Slack, Jira, and pair programming—to share ideas, align, and iterate quickly.</p>
+                        </section>
+                        <hr>
+                        <section>
+                            <p>Typical quick feedback request in Slack:</p>
+                            <figure class="m-size">
+                                <img src="images/modular-building/mb-feedback.png">
+                            </figure>
+                        </section>
+                        <hr>
+                        <section>
+                            <p>Design options for organizing modules: tags, folders, categories.</p>
+                            <p>
+                                <figure>
+                                    <img src="images/modular-building/mb-design-options.png">
+                                </figure>
+                            </p>
+                        </section>
+                        <hr>
+                        <section>
+                            <p>An exploration of the ways to present information: flyout menu vs tabs.</p>
+                            <p>
+                                <figure>
+                                    <img src="images/modular-building/mb-flyout.png">
+                                </figure>
+                            </p>
+                        </section>
+                        <hr>
+                        <section>
+                            <p>Design Library overview page</p>
+                            <p>
+                                <figure>
+                                    <img src="images/modular-building/mb-design-library-overview.png">
+                                </figure>
+                            </p>
+                        </section>
+                        <hr>
+                        <section>
+                            <p>Design Library index page</p>
+                            <p>
+                                <figure>
+                                    <img src="images/modular-building/mb-design-library.png">
+                                </figure>
+                            </p>
+                        </section>
+                        <hr>
+                        <section>
+                            <h3>What helped ensure successful delivery</h3>
+                            <ul>
+                                <li>Clear understanding of the feature's purpose and impact</li>
+                                <li>Concise, shared documentation to inform design and product decisions</li>
+                                <li>Continuous feedback loop from design team, customers (research, testing, rollout), stakeholders (demos, 1:1s), and scrum team (collaboration, code reviews)</li>
+                                <li>Share early and often—“Too ready, too late”</li>
+                                <li>Intentional overcommunication via Zoom, Slack, Confluence, and Docs, including sprint ideation and retrospectives</li>
+                                <li>Transparency—work visible to all, with regular stakeholder updates</li>
+                                <li>Embracing change—design as collaborative discovery, not just delivery</li>
+                                <li>Buffer time for bugs and iteration based on usability testing and customer feedback</li>
+                                <li>Positive mindset—balancing hard work with team morale</li>
+                                <li>Clearly defined scope, objectives, and timeline for team focus</li>
+                                <li>Team alignment on the core problem and potential solutions</li>
+                            </ul>
+                        </section>
+                        <hr>
+                        <section>
+                            <h3>Traps and wrong-turns</h3>
+                            <ul>
+                                <li>Early excitement about the design system led to high-fidelity prototypes being treated as final. Engineers struggled with the idea that these mockups were disposable. I later shifted to monochrome wireframes and created a UI kit for early-stage work.</li>
+                                <li>The project was marked “done” too soon—modules still don’t integrate well with grid/list views. I should have pushed harder to ensure full functionality before moving on.</li>
+                                <li>Restoring the “Design” item to the main navigation took six months due to Marketing’s resistance to updating existing content. We had to validate the change through user testing.</li>
+                                <li>Scalability challenge: personalization features will require merge tag insertion, but the Insert Panel UI is already maxed out. Future expansion may require a full redesign.</li>
+                                <li>I prototyped a “Manage modules” link in the Modules panel, but it was never implemented due to shifting priorities.</li>
+                                <li>We missed the need for an “Uncategorized” section during usability testing, but managed to include it before the final release.</li>
+                            </ul>
+                        </section>
+                        <hr>
+                        <section>
+                            <h3>Lessons learned</h3>
+                            <ul>
+                                <li>Usability testing is essential—many users mistakenly deleted entire modules. We added a confirmation dialog and improved the contextual menu to prevent this.</li>
+                                <li>Testing overlapped with development due to recruiting delays. It should’ve been done earlier to prevent scope creep and guide development effectively.</li>
+                                <li>“Edit Categories” was added to the context menu based on testing, despite concerns about duplicating functionality—this case warranted it.</li>
+                                <li>Low-fidelity prototypes help communicate progress and scope. High-fidelity mockups are valuable for engagement, but shouldn’t replace early wireframes.</li>
+                                <li>Always test edge cases—there are always overlooked details.</li>
+                                <li>Adding a “Drop here” signifier improved user confidence in drag-and-drop interactions. Small reassurance touches matter.</li>
+                                <li>Resist shortcuts—folders were suggested because they were “easier,” but we prioritized what was right for users over implementation convenience.</li>
+                                <li>Cross-team coordination is vital. Misaligned updates—like navigation changes—can lead to significant user experience issues that others must resolve.</li>
+                            </ul>
+                        </section>
+                        <hr>
+                        <section>
+                            <h3>Retrospective</h3>
+                            <ul>
+                                <li>Modular building targeted non-technical users, but visual editing also proved valuable to developers for verifying structure and speeding up content updates. I recommended broader positioning based on this insight.</li>
+                                <li>Feature promotion is critical—many users miss new tools due to lack of visibility or time. In-app highlights help address this.</li>
+                                <li>Cross-department collaboration posed delays—navigational updates required extended approval, which impacted Design Library discoverability.</li>
+                                <li>Attribution is difficult—impact on retention is hard to isolate when multiple teams contribute to the same outcomes.</li>
+                                <li>User skepticism of WYSIWYG editors remains a barrier, stemming from poor past experiences. Addressing this bias will require ongoing education.</li>
+                                <li>The project paved the way for future capabilities like merge tag insertion and broader personalization, a top customer need.</li>
+                            </ul>
+                        </section>
+                        <hr>
+                        <section>
+                            <h3>Results</h3>
+                            <ul>
+                                <li>The project showed strong metrics, but educating users on the value of modular building remains a key challenge.</li>
+                                <li>A major adoption barrier is persistent distrust of WYSIWYG editors, linked to past experiences with poor code quality.</li>
+                                <li>
+                                    Success is reflected across three key dimensions:
+                                    <ul>
+                                        <li>Quantitative metrics and usage data</li>
+                                        <li>Impact on closing deals and creating new opportunities</li>
+                                        <li>Direct feedback from customers</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                        <article class="grid">
+                            <figure>
+                                <a href="images/modular-building/mb-numbers-1.png" data-fancybox>
+                                    <img src="images/modular-building/mb-numbers-1.png">
+                                </a>
+                                <figcaption>Monthly active users</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/modular-building/mb-numbers-2.png" data-fancybox>
+                                    <img src="images/modular-building/mb-numbers-2.png">
+                                </a>
+                                <figcaption>Usage</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/modular-building/mb-numbers-3.png" data-fancybox>
+                                    <img src="images/modular-building/mb-numbers-3.png">
+                                </a>
+                                <figcaption>Category creation</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/modular-building/mb-feedback-customer.png" data-fancybox>
+                                    <img src="images/modular-building/mb-feedback-customer.png">
+                                </a>
+                                <figcaption>Customer feedback</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/modular-building/mb-feedback-customer-2.png" data-fancybox>
+                                    <img src="images/modular-building/mb-feedback-customer-2.png">
+                                </a>
+                                <figcaption>Customer feedback</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="images/modular-building/mb-sales.png" data-fancybox>
+                                    <img src="images/modular-building/mb-sales.png">
+                                </a>
+                                <figcaption>Closed deals</figcaption>
+                            </figure>
+                        </article>
+                        <!--
+                                <hr>
+                                <section>
+                                    <article class="grid ">
+                                        <figure>
+                                            <a href="images/modular-building/VE-DnD.png" data-fancybox>
+                                                <img src="images/modular-building/VE-DnD.png">
+                                            </a>
+                                            <figcaption>Design Library overview page</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <a href="images/modular-building/VE-modules.png" data-fancybox>
+                                                <img src="images/modular-building/VE-modules.png">
+                                            </a>
+                                            <figcaption>Initial Categorized Modules in Visual Editor</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <a href="images/modular-building/DL-section.png" data-fancybox>
+                                                <img src="images/modular-building/DL-section.png">
+                                            </a>
+                                            <figcaption>
+                                                Adjusted Categorized Modules in Visual Editor
+                                        with added description interaction and loader
+                                            </figcaption>
+                                        </figure>
+                                        <figure>
+                                            <a href="images/modular-building/DL-filled.png" data-fancybox>
+                                                <img src="images/modular-building/DL-filled.png">
+                                            </a>
+                                            <figcaption>Design Library: Snippets page</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <a href="images/modular-building/DL-empty.png" data-fancybox>
+                                                <img src="images/modular-building/DL-empty.png">
+                                            </a>
+                                            <figcaption>Initial drag and drop interaction</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <a href="images/modular-building/Builder-insert-panel.png" data-fancybox>
+                                                <img src="images/modular-building/Builder-insert-panel.png">
+                                            </a>
+                                            <figcaption>Insert panel in Code Editor</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <a href="images/modular-building/Builder-insert-menu.png" data-fancybox>
+                                                <img src="images/modular-building/Builder-insert-menu.png">
+                                            </a>
+                                            <figcaption>Adjusted drag and drop interaction with “Drop here” signifier and “Uncategorized” section.</figcaption>
+                                        </figure>
+                                    </article>
+                                    -->
+                    </main>
+                    <footer>
+                        <h3>
+                            <span class="icon-bg">
+                                <i data-feather="arrow-left"></i>
+                            </span>
+                            <a href="portfolio.html">Back to Portfolio</a>
+                        </h3>
+                    </footer>
+                </div>
+            </body>
+        </html>
+    </div>
+</div>
+<script>function showMenu() {
+        document.getElementById("overlay").style.display = "flex";
+        document.getElementById("menu_close").style.display = "block";
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("hide").style.display = "none";
+    }
+
+    function closeMenu() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("menu_close").style.display = "none";
+        document.getElementById("menu").style.display = "initial";
+        document.getElementById("hide").style.display = "initial";
+    }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28473723-1"></script>
+<script>window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+
+    gtag('config', 'UA-28473723-1');
+</script>
+<!-- Feather icons -->
+<script>
+                feather.replace();
+</script>
+</body>
+</html>
