@@ -387,10 +387,14 @@ div.hero img {
 }
 
 div.hero-text {
+	display: flex;
+	align-items: center;
 	width: 75%;
 	margin-right: 5%;
 }
-
+.hero-text h1 {
+	margin-bottom: 0;
+}
 a.btn {
 	width: auto;
 	margin-bottom: 1rem;
@@ -782,7 +786,9 @@ figcaption {
 	div.hero {
 		flex-direction: column;
 	}
-
+	.hero-text h1 {
+		margin-bottom: 2rem;
+	}
 	div.hero img {
 		width: 100%;
 		align-self: center;
@@ -866,7 +872,6 @@ figcaption {
 	figure a:focus {
 		outline: none;
 	}
-
 }
 
 @media only screen and (min-width: 1440px) {
@@ -910,7 +915,7 @@ p + ul {
 		600 3rem "Libre+Franklin",
 		Helvetica,
 		sans-serif;
-		margin: 0;
+	margin: 0;
 }
 .number {
 	display: flex;
@@ -930,15 +935,15 @@ p + ul {
 	margin: 2rem 0;
 	grid-column-gap: 1rem;
 }
-.stats.one{
+.stats.one {
 	grid-template-columns: 1fr;
 }
-.stats.two{
+.stats.two {
 	grid-template-columns: 1fr 1fr;
 }
-.stats.three{
+.stats.three {
 	grid-template-columns: 1fr 1fr 1fr;
 }
-.stats.four{
+.stats.four {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
