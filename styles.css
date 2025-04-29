@@ -70,7 +70,7 @@ h1 {
 	font:
 		600 2rem "Merriweather",
 		serif;
-	line-height: 1.25;
+	line-height: 1.5;
 	margin-bottom: 2rem;
 }
 
@@ -786,9 +786,7 @@ figcaption {
 	div.hero {
 		flex-direction: column;
 	}
-	.hero-text h1 {
-		margin-bottom: 2rem;
-	}
+
 	div.hero img {
 		width: 100%;
 		align-self: center;
@@ -798,6 +796,9 @@ figcaption {
 	div.hero-text {
 		width: 100%;
 		margin: 0;
+	}
+	.hero-text h1 {
+		margin-bottom: 2rem;
 	}
 }
 
