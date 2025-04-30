@@ -9,11 +9,11 @@ body {
 		300 1.125rem "Libre+Franklin",
 		Helvetica,
 		sans-serif;
-	background-color: #f7faff;
+
 	line-height: 1.5;
 	color: #33373e;
+	background: #f7faff url(i/stripes.svg) no-repeat left 80% bottom -200px;
 }
-
 #wrapper {
 	width: 90%;
 	margin: 4rem auto;
@@ -127,10 +127,10 @@ header {
 	justify-content: space-between;
 	position: sticky;
 	top: 0;
-	background-color: #f7faff;
 	z-index: 1;
-	margin: 1rem auto;
-	padding: 1rem 5%;
+	margin: 0 auto;
+	padding: 1.5rem 5%;
+	background: #f7faff url(i/stripes.svg) no-repeat 40% -200px;
 }
 
 div.logo a {
@@ -622,7 +622,7 @@ figcaption {
 		grid-column-gap: 2rem;
 		grid-row-gap: 2rem;
 		margin-top: 2rem;
-		margin-bottom: 8rem;
+		margin: 2rem 0;
 	}
 
 	article.projects {
@@ -668,7 +668,9 @@ figcaption {
 		position: static;
 		/*button absolute right:0 for .overf*/
 	}
-
+	header {
+		background: #f7faff url(i/stripes.svg) no-repeat right -200px;
+	}
 	#wrapper .head-flex {
 		flex-direction: column;
 		align-items: flex-start;
@@ -834,21 +836,20 @@ figcaption {
 		display: grid;
 		grid-column-gap: 2rem;
 		grid-row-gap: 2rem;
-		margin-top: 2rem;
-		margin-bottom: 8rem;
+		margin: 2rem 0;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 
 	.grid img {
 		width: 300px;
-		height: 300px;
+		height: 200px;
 	}
 
-	.grid-two {
+	.grid.two {
 		grid-template-columns: 1fr, 1fr;
 	}
 
-	.grid-two img {
+	.grid.two img {
 		width: 100%;
 		height: auto;
 	}
@@ -936,15 +937,15 @@ p + ul {
 	margin: 2rem 0;
 	grid-column-gap: 1rem;
 }
-.stats.one {
+.one {
 	grid-template-columns: 1fr;
 }
-.stats.two {
+.two {
 	grid-template-columns: 1fr 1fr;
 }
-.stats.three {
+.three {
 	grid-template-columns: 1fr 1fr 1fr;
 }
-.stats.four {
+.four {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
