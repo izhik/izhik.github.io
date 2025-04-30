@@ -180,7 +180,7 @@ ul#sub-nav-menu a:hover {
 }
 
 ul#sub-nav-menu a.active {
-	border-bottom: 0.125rem solid #7c6fd8;
+	border-bottom: 0.125rem solid #E80077;
 }
 
 ul#nav_menu {
@@ -278,7 +278,7 @@ article#works section {
 }
 
 article#works section:hover {
-	border: solid 2px #7c6fd8;
+	border: solid 2px #E80077;
 	cursor: pointer;
 }
 
@@ -308,7 +308,7 @@ article.projects section {
 }
 
 article.projects section:hover {
-	border: solid 2px #7c6fd8;
+	border: solid 2px #E80077;
 	cursor: pointer;
 }
 
@@ -859,7 +859,7 @@ figcaption {
 	}
 
 	.grid a:hover img {
-		border: solid 2px #7c6fd8;
+		border: solid 2px #E80077;
 	}
 
 	figure img:focus,
