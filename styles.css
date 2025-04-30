@@ -267,7 +267,7 @@ div#align_right h2 {
 article#works {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 7rem;
+	margin-bottom: 4rem;
 }
 
 article#works section {
