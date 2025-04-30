@@ -119,7 +119,7 @@ article.prototypes a:before {
 	width: 64px;
 	height: 64px;
 	border-radius: 50%;
-	background: rgba(255, 255, 255, 0.9) url("images/figma-logo.svg") 50% 50% no-repeat;
+	background: rgba(255, 255, 255, 0.9) url("i/figma-logo.svg") 50% 50% no-repeat;
 	background-size: 20px;
 	box-shadow: 0 4px 8px #D3DFF3;
 	transition: all 2s ease-in-out;

@@ -216,7 +216,7 @@ a.btn {
 	white-space: nowrap;
 	padding: 0.5rem 1.5rem;
 	border-radius: 0.25rem;
-	transition: background-color 0.5s;
+	transition: background-color 0.2s;
 	-webkit-tap-highlight-color: transparent;
 }
 
@@ -643,7 +643,7 @@ figcaption {
 	}
 
 	ul#overlay li {
-		font-size: 1.25em;
+		font-size: 4rem;
 	}
 }
 
@@ -703,7 +703,7 @@ figcaption {
 		background-color: transparent;
 		z-index: 3;
 		border: none;
-		padding: 2em;
+		padding: 3em;
 	}
 
 	button:hover {
@@ -719,22 +719,21 @@ figcaption {
 		top: 0;
 		left: 0;
 		bottom: 0;
-		overflow-y: scroll;
 		/*the landscape view?*/
 		background-color: black;
 		width: 100%;
 		color: white;
-		padding-top: 3rem;
+		padding-top: 5rem;
 		flex-direction: column;
 		align-items: flex-start;
-		padding-left: 20%;
 		margin: 0;
 	}
 
 	ul#overlay li {
 		white-space: nowrap;
-		font-size: 1.5em;
-		margin-bottom: 2rem;
+		font-size: 3em;
+		padding: 4rem 20%;
+		width: 100%;
 	}
 
 	ul#overlay a:hover {
